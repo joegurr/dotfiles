@@ -160,3 +160,16 @@ export EDITOR=vim
 alias pwa='cd ~/Development/switchdinpwa'
 alias backend='cd ~/Development/django-switchdin'
 
+export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
+export ANDROID_SDK="home/joe/Android/Sdk"
+export ANDROID_HOME="home/joe/Android/Sdk"
+export ANDROID_SDK_ROOT="/home/joe/Android/Sdk"
+
+export PATH="$HOME/Android/Sdk:$PATH"
+export PATH=$PATH:$ANDROID_SDK_ROOT/tools/bin
+export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
+export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/joe/.sdkman"
+[[ -s "/home/joe/.sdkman/bin/sdkman-init.sh" ]] && source "/home/joe/.sdkman/bin/sdkman-init.sh"
