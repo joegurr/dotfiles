@@ -159,6 +159,7 @@ export EDITOR=vim
 
 alias pwa='cd ~/Development/switchdinpwa'
 alias backend='cd ~/Development/django-switchdin'
+alias dev="cd ~/Development"
 
 export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
 export ANDROID_SDK="home/joe/Android/Sdk"
