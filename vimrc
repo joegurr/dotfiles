@@ -16,6 +16,7 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'Yggdroot/indentLine'
 
 call vundle#end()
 filetype plugin indent on
