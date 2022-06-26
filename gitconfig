@@ -1,0 +1,9 @@
+[user]
+	name = joegurr
+	email = joseph.gurr@outlook.com
+
+[init]
+	defaultBranch = main
+
+[pull]
+	ff = only

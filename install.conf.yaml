@@ -5,3 +5,4 @@
     ~/.tmux.conf: tmux.conf
     ~/.bashrc: bashrc
     ~/.profile: profile
+    ~/.gitconfig: gitconfig
