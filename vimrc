@@ -1,5 +1,4 @@
 call plug#begin()
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
 set ts=4 sw=4

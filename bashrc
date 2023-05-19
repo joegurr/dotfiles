@@ -118,8 +118,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-eval "$(starship init bash)"
-
 prompt_show_ec () {
   # Catch exit code
   ec=$?
