@@ -6,3 +6,5 @@
     ~/.bashrc: bashrc
     ~/.profile: profile
     ~/.gitconfig: gitconfig
+    ~/.gitignore: gitignore
+    ~/.config/i3/config: i3config
