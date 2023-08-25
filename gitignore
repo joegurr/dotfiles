@@ -1,4 +1,12 @@
 .vscode
-draft.txt
+conda_manifold_env.yml
+jg_draft*
 
-
+```
+[filter "jupyter_clear_output"]
+## See https://tillahoffmann.github.io/2017/04/17/versioning-jupyter-notebooks-with-git.html
+    clean = "poetry run jupyter nbconvert --stdin --stdout --log-level=ERROR \
+             --to notebook --ClearOutputPreprocessor.enabled=True"
+    smudge = cat
+    required = true
+```

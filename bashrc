@@ -96,8 +96,6 @@ alias l='ls -CF'
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
-mkcd() { mkdir -p "$@" && cd "$@"; }
-
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
@@ -118,24 +116,27 @@ if ! shopt -oq posix; then
   fi
 fi
 
-prompt_show_ec () {
-  # Catch exit code
-  ec=$?
-  # Display exit code in red text unless zero
-  if [ $ec -ne 0 ];then
-    echo -e "\033[31;1m[$ec]\033[0m"
-  fi
-}
-PROMPT_COMMAND="prompt_show_ec; $PROMPT_COMMAND"
-
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-export PIP_REQUIRE_VIRTUALENV=true
-
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 alias :q='exit'
+
+mkcd() { mkdir -p "$@" && cd "$@"; }
+
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/joe/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/joe/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/joe/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/joe/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+alias gco='git checkout'
+export PATH="/home/joe/bin:$PATH"

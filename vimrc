@@ -1,6 +1,3 @@
-call plug#begin()
-call plug#end()
-
 set ts=4 sw=4
 
 " Turn on syntax highlighting.

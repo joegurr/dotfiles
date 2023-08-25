@@ -8,11 +8,6 @@
 # for ssh logins, install and configure the libpam-umask package.
 #umask 022
 
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-export PATH="$HOME/.config/composer/vendor/bin:$PATH"
-eval "$(pyenv init --path)"
-
 # if running bash
 if [ -n "$BASH_VERSION" ]; then
     # include .bashrc if it exists
@@ -30,3 +25,11 @@ fi
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
+
+if test "$PS1"; then
+  if [ -z "$SSH_AUTH_SOCK" ]; then
+    #start ssh-agent
+    eval "$(ssh-agent -s)"
+  fi
+fi
+
