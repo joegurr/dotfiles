@@ -140,3 +140,9 @@ unset __conda_setup
 # <<< conda initialize <<<
 alias gco='git checkout'
 export PATH="/home/joe/bin:$PATH"
+
+source /etc/bash_completion.d/git-prompt
+export GIT_PS1_SHOWDIRTYSTATE=1
+export PS1='\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]$(__git_ps1 "(%s)")\$ '
+
+ [[ -s /home/joe/.autojump/etc/profile.d/autojump.sh ]] && source /home/joe/.autojump/etc/profile.d/autojump.sh
