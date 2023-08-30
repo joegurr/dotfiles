@@ -6,3 +6,5 @@
     ~/.bashrc: bashrc
     ~/.profile: profile
     ~/.gitignore: gitignore
+    ~/.bash_aliases: bash_aliases
+    ~/.bash_python_config: bash_python_config

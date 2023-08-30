@@ -1,0 +1,19 @@
+[user]
+	name = Joseph Gurr
+	email = joseph.gurr@outlook.com
+
+[init]
+	defaultBranch = main
+
+[pull]
+	ff = only
+
+[core]
+	excludesfile = /home/joe/.gitignore
+	attributesfile = /home/joe/.gitattributes
+	editor = vim
+
+[filter "jupyter_clear_output"]
+    clean = "conda run -n default jupyter nbconvert --stdin --stdout --log-level=ERROR --to notebook --ClearOutputPreprocessor.enabled=True"
+    smudge = cat
+    required = true
