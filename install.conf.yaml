@@ -5,6 +5,9 @@
     ~/.tmux.conf: tmux.conf
     ~/.bashrc: bashrc
     ~/.profile: profile
+    ~/.gitconfig: gitconfig
+    ~/.gitattributes: gitattributes
     ~/.gitignore: gitignore
     ~/.bash_aliases: bash_aliases
+    ~/.bash_aws_config: bash_aws_config
     ~/.bash_python_config: bash_python_config

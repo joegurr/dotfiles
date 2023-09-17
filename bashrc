@@ -69,6 +69,14 @@ if [ -f ~/.bash_python_config ]; then
     . ~/.bash_python_config
 fi
 
+# aws cli configuration
+if [ -f ~/.bash_aws_config ]; then
+    # Right now this file only contains the line
+    # `export AWS_DEFAULT_PROFILE=MyProfile`
+    # I just don't want to commit this
+    . ~/.bash_aws_config
+fi
+
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
