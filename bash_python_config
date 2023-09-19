@@ -21,3 +21,5 @@ unset __conda_setup
 
 # poetry
 export PATH="/home/joe/.local/bin:$PATH"
+
+export PIP_REQUIRE_VIRTUALENV=true

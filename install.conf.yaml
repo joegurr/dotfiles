@@ -11,3 +11,4 @@
     ~/.bash_aliases: bash_aliases
     ~/.bash_aws_config: bash_aws_config
     ~/.bash_python_config: bash_python_config
+    ~/.config/pypoetry/config.toml: pypoetry_config.toml
