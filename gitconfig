@@ -14,6 +14,6 @@
 	editor = vim
 
 [filter "jupyter_clear_output"]
-    clean = "conda run -n default jupyter nbconvert --stdin --stdout --log-level=ERROR --to notebook --ClearOutputPreprocessor.enabled=True"
+    clean = "poetry run jupyter nbconvert --stdin --stdout --log-level=ERROR --to notebook --ClearOutputPreprocessor.enabled=True"
     smudge = cat
     required = true
