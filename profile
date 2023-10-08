@@ -26,13 +26,6 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
-if test "$PS1"; then
-  if [ -z "$SSH_AUTH_SOCK" ]; then
-    #start ssh-agent
-    eval "$(ssh-agent -s)"
-  fi
-fi
-
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
