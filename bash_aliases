@@ -10,8 +10,10 @@ fi
 # some more ls aliases
 alias ll='ls -alF'
 
-# I'm dumb
+# be safe
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
-alias :q='exit'
+
+# sign your commits
+alias 'git commit'='git commit -S'
