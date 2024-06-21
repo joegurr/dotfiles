@@ -14,6 +14,3 @@ alias ll='ls -alF'
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
-
-# sign your commits
-alias 'git commit'='git commit -S'
