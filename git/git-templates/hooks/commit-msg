@@ -1,0 +1,27 @@
+#!/bin/sh
+echo "commit-msg hook running"
+
+commit_msg_file="$1"
+
+# ensure the commit message ends with a newline
+echo "" >> "$commit_msg_file"
+
+
+# if commitlint fails, prevent the commit
+commitlint -e $commit_msg_file
+
+if [ $? -ne 0 ]; then
+  echo "Commit message did not pass commitlint rules."
+  exit 1
+fi
+
+# check commit is signed
+SOB=$(git var GIT_AUTHOR_IDENT | sed -n 's/^\(.*>\).*$/Signed-off-by: \1/p')
+grep -qs "^$SOB" "$commit_msg_file" || echo "$SOB" >> "$commit_msg_file"
+
+# check there isn't duplicate sign off lines
+test "" = "$(grep '^Signed-off-by: ' "$commit_msg_file" |
+	 sort | uniq -c | sed -e '/^[ 	]*1[ 	]/d')" || {
+	echo >&2 Duplicate Signed-off-by lines.
+	exit 1
+}
