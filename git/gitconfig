@@ -1,9 +1,11 @@
 [user]
-	name = Joseph Gurr
-	email = joseph.gurr@outlook.com
+	name = Joe Gurr
+	email = me@joegurr.com
+	signingkey = /home/joe/.ssh/id_me-at-joegurr-dot-com.pub
 
 [init]
 	defaultBranch = main
+	templateDir = ~/.git-templates
 
 [pull]
 	ff = only
@@ -17,3 +19,8 @@
     clean = "poetry run jupyter nbconvert --stdin --stdout --log-level=ERROR --to notebook --ClearOutputPreprocessor.enabled=True"
     smudge = cat
     required = true
+
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true

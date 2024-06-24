@@ -57,9 +57,6 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 # Alias definitions.
-# You may want to put all your additions into a separate file like
-# ~/.bash_aliases, instead of adding them here directly.
-# See /usr/share/doc/bash-doc/examples in the bash-doc package.
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
@@ -71,9 +68,6 @@ fi
 
 # aws cli configuration
 if [ -f ~/.bash_aws_config ]; then
-    # Right now this file only contains the line
-    # `export AWS_DEFAULT_PROFILE=MyProfile`
-    # I just don't want to commit this
     . ~/.bash_aws_config
 fi
 
@@ -103,4 +97,3 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 eval "$(mcfly init bash)"
-export PATH="$PATH:/opt/nvim-linux64/bin"

@@ -3,12 +3,17 @@
 - link:
     ~/.vimrc: vimrc
     ~/.tmux.conf: tmux.conf
-    ~/.bashrc: bashrc
+    # bash
     ~/.profile: profile
-    ~/.gitconfig: gitconfig
-    ~/.gitattributes: gitattributes
-    ~/.gitignore: gitignore
+    ~/.bashrc: bashrc
     ~/.bash_aliases: bash_aliases
     ~/.bash_aws_config: bash_aws_config
+    # python
     ~/.bash_python_config: bash_python_config
     ~/.config/pypoetry/config.toml: pypoetry_config.toml
+    # git
+    ~/.gitconfig: git/gitconfig
+    ~/.gitattributes: git/gitattributes
+    ~/.gitignore: git/gitignore
+    ~/.git-templates/hooks/commit-msg: git/git-templates/hooks/commit-msg
+    ~/.commitlintrc.json: commitlintrc.json
