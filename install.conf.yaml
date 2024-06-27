@@ -3,6 +3,7 @@
 - link:
     ~/.vimrc: vimrc
     ~/.tmux.conf: tmux.conf
+    ~/.config/i3/config: i3config
     # bash
     ~/.profile: profile
     ~/.bashrc: bashrc
