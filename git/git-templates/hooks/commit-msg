@@ -5,11 +5,12 @@ import subprocess
 
 def main(commit_msg_file):
     # Ensure the commit message ends with a newline
-    with open(commit_msg_file, 'rb+') as f:
-        f.seek(-1, 2)  # Move to the last byte of the file
+    with open(commit_msg_file, 'r+') as f:
+        f.seek(0, 2)  # Move to the end of the file
+        f.seek(f.tell() - 1, 0)  # Move back one character from the end
         last_char = f.read(1)
-        if last_char != b'\n':
-            f.write(b'\n')
+        if last_char != '\n':
+            f.write('\n')
 
     # Run commitlint to check the commit message
     result = subprocess.run(['commitlint', '-e', commit_msg_file])
@@ -30,6 +31,7 @@ def main(commit_msg_file):
         content = f.read()
         if signed_off_by not in content:
             f.write(f'{signed_off_by}\n')
+
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
