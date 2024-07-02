@@ -25,13 +25,12 @@ def main(commit_msg_file):
     # gives format A B <C@D> E F, we don't want E and F
     author_ident = author_ident.split('>')[0] + '>'
 
-    signed_off_by = f'Signed-off-by: {author_ident}'
+    signed_off_by = f'\nSigned-off-by: {author_ident}'
 
     with open(commit_msg_file, 'r+') as f:
         content = f.read()
         if signed_off_by not in content:
             f.write(f'{signed_off_by}\n')
-
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
