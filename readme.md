@@ -31,4 +31,7 @@ Some of the tools I appreciate are:
 [mcfly](https://github.com/cantino/mcfly)
 [autojump](https://github.com/wting/autojump)
 [commitlint](https://github.com/conventional-changelog/commitlint)
-[direnv]
+[direnv](https://direnv.net/)
+[nbstripout](https://github.com/kynan/nbstripout)
+
+`nbstripout --install --attributes .gitatributes` then copy the contents of .gitatributes to .git/info/attributes
