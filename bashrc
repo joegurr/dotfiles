@@ -101,7 +101,12 @@ eval "$(mcfly init bash)"
 export PATH="$PATH:/opt/nvim-linux64/bin"
 
 # inspired by https://unix.stackexchange.com/a/113768
-if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+if command -v tmux &> /dev/null && \
+    [ -n "$PS1" ] && \
+    [[ ! "$TERM" =~ screen ]] && \
+    [[ ! "$TERM" =~ tmux ]] && \
+    [ -z "$TMUX" ] && \
+    [ "$TERM_PROGRAM" != "vscode" ]; then
   if tmux has-session -t main 2>/dev/null; then
     tmux attach-session -t main
   else
