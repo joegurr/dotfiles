@@ -7,5 +7,8 @@
         "trace.server": "verbose",
         "settings": {}
         }
+    },
+    "suggest": {
+        "triggerCompletionWait": 1000
     }
 }

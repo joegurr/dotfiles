@@ -4,17 +4,26 @@
 
 call plug#begin()
 
+Plug 'morhetz/gruvbox'
+
 Plug 'neoclide/coc.nvim'
 " cd ~/.vim/plugged/coc.nvim; npm ci
 " npm install -g pyright
 
 call plug#end()
 
+" colour scheme
+set background=dark
+autocmd vimenter * ++nested colorscheme gruvbox
+
 " coc
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gr <Plug>(coc-references)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gy <Plug>(coc-type-definition)
+
+" Use <Tab> to trigger completion
+inoremap <silent><expr> <Tab> pumvisible() ? "\<C-n>" : "\<C-r>=coc#refresh()\<CR>"
 
 set ts=4 sw=4
 
