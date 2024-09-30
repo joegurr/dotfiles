@@ -1,0 +1,11 @@
+{
+    "languageserver": {
+        "pyright": {
+        "command": "pyright-langserver",
+        "args": ["--stdio"],
+        "filetypes": ["python"],
+        "trace.server": "verbose",
+        "settings": {}
+        }
+    }
+}

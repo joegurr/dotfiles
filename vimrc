@@ -1,3 +1,21 @@
+" vim-plug
+" curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+"    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+call plug#begin()
+
+Plug 'neoclide/coc.nvim'
+" cd ~/.vim/plugged/coc.nvim; npm ci
+" npm install -g pyright
+
+call plug#end()
+
+" coc
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gr <Plug>(coc-references)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gy <Plug>(coc-type-definition)
+
 set ts=4 sw=4
 
 " Turn on syntax highlighting.

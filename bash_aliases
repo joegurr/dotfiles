@@ -15,5 +15,4 @@ alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 
-alias vim=nvim
-
+# alias vim=nvim
