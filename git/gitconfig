@@ -15,12 +15,13 @@
 	attributesfile = /home/joe/.gitattributes
 	editor = vim
 
-[filter "jupyter_clear_output"]
-    clean = "poetry run jupyter nbconvert --stdin --stdout --log-level=ERROR --to notebook --ClearOutputPreprocessor.enabled=True"
+[filter "nb-clean"]
+    clean = /home/joe/code/.venv/bin/nb-clean clean
     smudge = cat
     required = true
 
 [gpg]
 	format = ssh
+
 [commit]
 	gpgsign = true

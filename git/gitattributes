@@ -1,1 +1,1 @@
-# *.ipynb    filter=jupyter_clear_output
+*.ipynb filter=nb-clean

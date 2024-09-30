@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Run Black on all Python files, excluding .venv directory
+echo "Formatting Python files with Black..."
+
+# Run black and exclude .venv
+black . --exclude '.venv/'
+
+# Check if the formatting was successful
+if [ $? -eq 0 ]; then
+    echo "Formatting complete."
+else
+    echo "Formatting failed."
+    exit 1
+fi
