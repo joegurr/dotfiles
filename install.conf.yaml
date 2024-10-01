@@ -13,6 +13,7 @@
     # python
     ~/.bash_python_config: bash_python_config
     ~/.config/pypoetry/config.toml: pypoetry_config.toml
+    ~/code/requirements.txt: requirements.txt
     # git
     ~/.gitconfig: git/gitconfig
     ~/.gitattributes: git/gitattributes
