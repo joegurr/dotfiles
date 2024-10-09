@@ -27,6 +27,10 @@ inoremap <silent><expr> <Tab> pumvisible() ? "\<C-n>" : "\<C-r>=coc#refresh()\<C
 
 set ts=4 sw=4
 
+" Turn on spell checking
+set spelllang=en_gb
+set spell
+
 " Turn on syntax highlighting.
 syntax on
 

@@ -3,6 +3,7 @@
 - link:
     ~/.vimrc: vimrc
     ~/.vim/coc-settings.json: coc-settings.json
+    ~/.vim/spell/en.utf-8.add: en.utf-8.add
     ~/.tmux.conf: tmux.conf
     ~/.config/i3/config: i3config
     # bash
@@ -20,3 +21,4 @@
     ~/.gitignore: git/gitignore
     ~/.git-templates/hooks/commit-msg: git/git-templates/hooks/commit-msg
     ~/.commitlintrc.json: commitlintrc.json
+

@@ -8,6 +8,8 @@ Right now, there is configuration in this repo for the following tools:
 
 * vim
 
+  * remember to run `:mkspell ~/.vim/spell/en.utf-8.add`
+
 * tmux
 
 * bash
@@ -32,6 +34,6 @@ Some of the tools I appreciate are:
 [autojump](https://github.com/wting/autojump)
 [commitlint](https://github.com/conventional-changelog/commitlint)
 [direnv](https://direnv.net/)
-[nbstripout](https://github.com/kynan/nbstripout)
+[nbstripout](https://github.com/kynan/nbstripout) (alternatively [nb-clean](https://pypi.org/project/nb-clean/))
 
 `nbstripout --install --attributes .gitatributes` then copy the contents of .gitatributes to .git/info/attributes
