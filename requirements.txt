@@ -1,6 +1,7 @@
 nb-clean
+black
+black[jupyter]
 llm
 # in the venv run the commands:
 # `llm install llm-claude-3`
 # `llm kets set claude`
-

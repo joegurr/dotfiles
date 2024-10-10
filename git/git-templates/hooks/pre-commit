@@ -4,7 +4,7 @@
 echo "Formatting Python files with Black..."
 
 # Run black and exclude .venv
-black . --exclude '.venv/'
+/home/joe/code/.venv/bin/black . --exclude '.venv/'
 
 # Check if the formatting was successful
 if [ $? -eq 0 ]; then
