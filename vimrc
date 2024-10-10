@@ -4,6 +4,9 @@
 
 call plug#begin()
 
+" Vim HardTime
+Plug 'takac/vim-hardtime'
+
 Plug 'morhetz/gruvbox'
 
 Plug 'neoclide/coc.nvim'
@@ -11,6 +14,10 @@ Plug 'neoclide/coc.nvim'
 " npm install -g pyright
 
 call plug#end()
+
+" hardtime
+let g:hardtime_default_on = 1
+let g:hardtime_showmsg = 1
 
 " colour scheme
 set background=dark
