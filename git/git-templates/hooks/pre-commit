@@ -1,15 +1,19 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-# Run Black on all Python files, excluding .venv directory
-echo "Formatting Python files with Black..."
+# To have this script run when commiting you can copy it to
+# .git/hooks/pre-commit and run chmod +x .git/hooks/pre-commit
 
-# Run black and exclude .venv
-/home/joe/code/.venv/bin/black . --exclude '.venv/'
+echo "python linting and formatting"
 
-# Check if the formatting was successful
-if [ $? -eq 0 ]; then
-    echo "Formatting complete."
-else
-    echo "Formatting failed."
-    exit 1
+if ! "$GLOBAL_PYTHON_VENV"/bin/pyright .; then
+    echo "pyright failed"
 fi
+
+if ! "$GLOBAL_PYTHON_VENV"/bin/black . --exclude '.venv/'; then
+    echo "formatting incorrect"
+fi
+
+if ! "$GLOBAL_PYTHON_VENV"/bin/flake8 . --exclude '.venv'; then
+    echo "flake8 failed"
+fi
+

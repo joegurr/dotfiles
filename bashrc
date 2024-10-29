@@ -114,3 +114,7 @@ if command -v tmux &> /dev/null && \
   fi
 fi
 
+source "$HOME/.cargo/env"
+
+export GLOBAL_PYTHON_VENV=/home/joe/code/.venv
+
