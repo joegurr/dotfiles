@@ -1,13 +1,26 @@
 {
     "languageserver": {
         "pyright": {
-        "command": "pyright-langserver",
-        "args": ["--stdio"],
-        "filetypes": ["python"],
-        "trace.server": "verbose",
-        "settings": {}
-        }
-    },
+            "command": "pyright-langserver",
+            "args": [
+                "--stdio"
+            ],
+            "filetypes": [
+                "python"
+            ],
+            "trace.server": "verbose",
+            "settings": {}
+        },
+        "latex": {
+            "command": "texlab",
+            "filetypes": [
+                "tex",
+				"latex",
+                "bib",
+                "sty"
+            ]
+		}
+	},
     "suggest": {
         "triggerCompletionWait": 1000
     }

@@ -11,7 +11,11 @@ Plug 'morhetz/gruvbox'
 
 Plug 'neoclide/coc.nvim'
 " cd ~/.vim/plugged/coc.nvim; npm ci
+" python
 " npm install -g pyright
+" tex
+" cargo install --git https://github.com/latex-lsp/texlab --locked --tag <insert version here>
+" I installed v5.19.0
 
 call plug#end()
 
@@ -30,7 +34,7 @@ nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gy <Plug>(coc-type-definition)
 
 " Use <Tab> to trigger completion
-inoremap <silent><expr> <Tab> pumvisible() ? "\<C-n>" : "\<C-r>=coc#refresh()\<CR>"
+" inoremap <silent><expr> <Tab> pumvisible() ? "\<C-n>" : "\<C-r>=coc#refresh()\<CR>"
 
 set ts=4 sw=4
 
