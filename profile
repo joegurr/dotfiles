@@ -29,4 +29,9 @@ fi
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv > /dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
+
+" installed via: `curl https://sh.rustup.rs -sSf | sh`
+" https://doc.rust-lang.org/cargo/getting-started/installation.html
+" needed for typer and texlab
 source "$HOME/.cargo/env"
+

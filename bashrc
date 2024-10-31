@@ -114,6 +114,9 @@ if command -v tmux &> /dev/null && \
   fi
 fi
 
+" installed via: `curl https://sh.rustup.rs -sSf | sh`
+" https://doc.rust-lang.org/cargo/getting-started/installation.html
+" needed for typer and texlab
 source "$HOME/.cargo/env"
 
 export GLOBAL_PYTHON_VENV=/home/joe/code/.venv

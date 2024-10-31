@@ -116,3 +116,41 @@ function! ToggleNetrw()
 endfunction
 
 noremap <F2> :call ToggleNetrw()<CR>
+
+set list listchars=tab:>-,trail:.
+
+set foldmethod=manual
+
+set expandtab
+set softtabstop=4
+
+function! CreateBlogHTMLTemplate()
+    call append(0, [
+        \ '<!DOCTYPE html>',
+        \ '<html lang="en">',
+        \ '',
+        \ '<head>',
+        \ '  <meta charset="UTF-8" />',
+        \ '  <meta name="viewport" content="width=device-width, initial-scale=1.0" />',
+        \ '  <title>TITLE</title>',
+        \ '  <link rel="stylesheet" href="../style.css" />',
+        \ '</head>',
+        \ '',
+        \ '<body>',
+        \ '  <header>',
+        \ '    <h1>',
+        \ '      <a href="/" rel="home">Joe Gurr</a>',
+        \ '    </h1>',
+        \ '  </header>',
+        \ '  <main>',
+        \ '    <h3>TITLE</h3>',
+        \ '  </main>',
+        \ '  <footer></footer>',
+        \ '</body>',
+        \ '',
+        \ '</html>',
+        \ ])
+endfunction
+
+command! Blog :call CreateBlogHTMLTemplate()
+
