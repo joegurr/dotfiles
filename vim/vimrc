@@ -98,5 +98,5 @@ set foldmethod=manual
 set expandtab
 set softtabstop=4
 
-# User defined functions
+" User defined functions
 source ~/.vim/functions.vim

@@ -56,56 +56,80 @@ endfunction
 command! Blog :call CreateBlogHTMLTemplate()
 
 " Extend ,n
-" needs testing
+" Needs testing
 function! OpenNoteForDay(offset)
   " Get the current buffer's file path
   let l:current_file = expand('%:p')
 
   " Get the path to the notes directory from an environment variable
-  let l:notes_dir = $NOTES_DIR
+  let l:notes_dir = expand('$NOTES_DIR')
+
   if empty(l:notes_dir)
-    let l:notes_dir = '~/Documents/notes'
+    let l:notes_dir = expand('~/.Documents/notes')
   endif
 
-  " Check if the current buffer is in the correct location
-  if l:current_file =~ printf('%s/\d\{4}-\d\{2}-\d\{2}\.md$', l:notes_dir)
-    " Extract the date from the current buffer's filename
-    let l:date_parts = matchlist(l:current_file, printf('%s/\(\d\{4}\)-\(\d\{2}\)-\(\d\{2}\)\.md$', l:notes_dir))
-    let l:year = str2nr(l:date_parts[1])
-    let l:month = str2nr(l:date_parts[2])
-    let l:day = str2nr(l:date_parts[3])
+  " Expand the notes directory to make sure it's absolute
+  let l:notes_dir = expand(l:notes_dir)
 
-    " Calculate the new date based on the offset
-    let l:new_day = l:day + a:offset
-    let l:new_month = l:month
-    let l:new_year = l:year
+  " Debugging: Print the current file and notes directory
+  " echo "Current file: " . l:current_file
+  " echo "Notes directory: " . l:notes_dir
 
-    " Normalize the date
-    while l:new_day < 1
-      let l:new_day += 31
-      let l:new_month -= 1
-      if l:new_month < 1
-        let l:new_month = 12
-        let l:new_year -= 1
-      endif
-    endwhile
-    while l:new_day > 31
-      let l:new_day -= 31
-      let l:new_month += 1
-      if l:new_month > 12
-        let l:new_month = 1
-        let l:new_year += 1
-      endif
-    endwhile
+  " Extract the filename (2024-11-05.md)
+  let l:filename = fnamemodify(l:current_file, ':t')
 
-    " Build the new file path
-    let l:new_file = printf('%s/%04d-%02d-%02d.md', l:notes_dir, l:new_year, l:new_month, l:new_day)
+  " Debugging: Print the filename
+  " echo "Filename: " . l:filename
 
-    " Open the new file
-    execute 'edit ' . l:new_file
-  else
+  " Construct the regex pattern to match the date in the filename (e.g., 2024-11-05.md)
+  let l:notes_pattern = '\v(\d{4})-(\d{2})-(\d{2})\.md$'
+
+  " Debugging: Print the regular expression pattern
+  " echo "Notes pattern: " . l:notes_pattern
+
+  " Check if the current buffer's filename matches the note file pattern
+  let l:date_parts = matchlist(l:filename, l:notes_pattern)
+
+  " If the pattern doesn't match, output an error
+  if len(l:date_parts) == 0
     echo "Current buffer is not a valid note file."
+    return
   endif
+
+  " Extract the date from the current buffer's filename
+  let l:year = str2nr(l:date_parts[1])
+  let l:month = str2nr(l:date_parts[2])
+  let l:day = str2nr(l:date_parts[3])
+
+  " Calculate the new date based on the offset
+  let l:new_day = l:day + a:offset
+  let l:new_month = l:month
+  let l:new_year = l:year
+
+  " Normalize the date (this is a simple way to move through months)
+  while l:new_day < 1
+    let l:new_day += 31
+    let l:new_month -= 1
+    if l:new_month < 1
+      let l:new_month = 12
+      let l:new_year -= 1
+    endif
+  endwhile
+
+  while l:new_day > 31
+    let l:new_day -= 31
+    let l:new_month += 1
+    if l:new_month > 12
+      let l:new_month = 1
+      let l:new_year += 1
+    endif
+  endwhile
+
+  " Build the new file path
+  let l:new_file = printf('%s/%04d-%02d-%02d.md', l:notes_dir, l:new_year, l:new_month, l:new_day)
+
+  " Open the new file
+  execute 'edit ' . l:new_file
 endfunction
 
 command! -nargs=1 Note call OpenNoteForDay(<args>)

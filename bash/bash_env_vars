@@ -1,2 +1,7 @@
+# These are the env vars for my own tools
+# Other env vars live in bashrc
+
 # associated with ,n
 export NOTES_DIR=/home/joe/Documents/notes
+# associated with git hooks
+export GLOBAL_PYTHON_VENV=/home/joe/code/.venv

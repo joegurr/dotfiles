@@ -34,4 +34,3 @@ eval "$(pyenv init -)"
 # https://doc.rust-lang.org/cargo/getting-started/installation.html
 # needed for typer and texlab
 source "$HOME/.cargo/env"
-
