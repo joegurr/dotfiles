@@ -40,9 +40,3 @@ Some of the tools I appreciate are:
 * [commitlint](https://github.com/conventional-changelog/commitlint)
 * [direnv](https://direnv.net/)
 * [nb-clean](https://pypi.org/project/nb-clean/)
-
----
-
-## TODO
-
-[ ] Distribute git hooks
