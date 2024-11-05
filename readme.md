@@ -35,8 +35,14 @@ Right now, there is configuration in this repo for the following tools:
 
 Some of the tools I appreciate are:
 
-[mcfly](https://github.com/cantino/mcfly)
-[autojump](https://github.com/wting/autojump)
-[commitlint](https://github.com/conventional-changelog/commitlint)
-[direnv](https://direnv.net/)
-[nb-clean](https://pypi.org/project/nb-clean/)
+* [mcfly](https://github.com/cantino/mcfly)
+* [autojump](https://github.com/wting/autojump)
+* [commitlint](https://github.com/conventional-changelog/commitlint)
+* [direnv](https://direnv.net/)
+* [nb-clean](https://pypi.org/project/nb-clean/)
+
+---
+
+## TODO
+
+[ ] Distribute git hooks

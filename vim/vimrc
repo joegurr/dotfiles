@@ -10,14 +10,9 @@ Plug 'takac/vim-hardtime'
 Plug 'morhetz/gruvbox'
 
 Plug 'neoclide/coc.nvim'
-" cd ~/.vim/plugged/coc.nvim; npm ci
-" python
-" npm install -g pyright
-" tex
-" cargo install --git https://github.com/latex-lsp/texlab --locked --tag <insert version here>
-" I installed v5.19.0
 
 call plug#end()
+" :PlugInstall
 
 " hardtime
 let g:hardtime_default_on = 1
@@ -33,8 +28,14 @@ nmap <silent> gr <Plug>(coc-references)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gy <Plug>(coc-type-definition)
 
-" Use <Tab> to trigger completion
-" inoremap <silent><expr> <Tab> pumvisible() ? "\<C-n>" : "\<C-r>=coc#refresh()\<CR>"
+" You might need to run `cd ~/.vim/plugged/coc.nvim; npm ci`
+" python
+" `npm install -g pyright`
+" tex
+" `cargo install --git https://github.com/latex-lsp/texlab --locked --tag <insert version here>`
+" I installed v5.19.0
+" html
+" `:CocInstall coc-html`
 
 set ts=4 sw=4
 

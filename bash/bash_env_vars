@@ -5,3 +5,7 @@
 export NOTES_DIR=/home/joe/Documents/notes
 # associated with git hooks
 export GLOBAL_PYTHON_VENV=/home/joe/code/.venv
+# associated with ,b
+export BOOKMARK_FILE=/home/joe/bin/bookmarks.csv
+# associated with ,sc and ,rc
+export COMMANDS_LIST_FILE=/home/joe/bin/commands.csv
