@@ -91,32 +91,6 @@ inoremap <Right> <ESC>:echoe "Use l"<CR>
 inoremap <Up>    <ESC>:echoe "Use k"<CR>
 inoremap <Down>  <ESC>:echoe "Use j"<CR>
 
-" Replace NERDTree
-let g:netrw_banner = 0
-let g:netrw_liststyle = 3
-let g:netrw_browse_split = 4
-let g:netrw_altv = 1
-let g:netrw_winsize = 25
-let g:NetrwIsOpen=0
-
-function! ToggleNetrw()
-    if g:NetrwIsOpen
-        let i = bufnr("$")
-        while (i >= 1)
-            if (getbufvar(i, "&filetype") == "netrw")
-                silent exe "bwipeout " . i
-            endif
-            let i-=1
-        endwhile
-        let g:NetrwIsOpen=0
-    else
-        let g:NetrwIsOpen=1
-        silent Lexplore
-    endif
-endfunction
-
-noremap <F2> :call ToggleNetrw()<CR>
-
 set list listchars=tab:>-,trail:.
 
 set foldmethod=manual
@@ -124,33 +98,5 @@ set foldmethod=manual
 set expandtab
 set softtabstop=4
 
-function! CreateBlogHTMLTemplate()
-    call append(0, [
-        \ '<!DOCTYPE html>',
-        \ '<html lang="en">',
-        \ '',
-        \ '<head>',
-        \ '  <meta charset="UTF-8" />',
-        \ '  <meta name="viewport" content="width=device-width, initial-scale=1.0" />',
-        \ '  <title>TITLE</title>',
-        \ '  <link rel="stylesheet" href="../style.css" />',
-        \ '</head>',
-        \ '',
-        \ '<body>',
-        \ '  <header>',
-        \ '    <h1>',
-        \ '      <a href="/" rel="home">Joe Gurr</a>',
-        \ '    </h1>',
-        \ '  </header>',
-        \ '  <main>',
-        \ '    <h3>TITLE</h3>',
-        \ '  </main>',
-        \ '  <footer></footer>',
-        \ '</body>',
-        \ '',
-        \ '</html>',
-        \ ])
-endfunction
-
-command! Blog :call CreateBlogHTMLTemplate()
-
+# User defined functions
+source ~/.vim/functions.vim

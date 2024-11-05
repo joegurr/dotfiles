@@ -1,18 +1,22 @@
 - clean: ['~']
 
 - link:
-    ~/.vimrc: vimrc
-    ~/.vim/coc-settings.json: coc-settings.json
-    ~/.vim/spell/en.utf-8.add: en.utf-8.add
+    # misc
     ~/.tmux.conf: tmux.conf
     ~/.config/i3/config: i3config
+    # vim
+    ~/.vimrc: vim/vimrc
+    ~/.vim/functions.vim: vim/functions.vim
+    ~/.vim/coc-settings.json: vim/coc-settings.json
+    ~/.vim/spell/en.utf-8.add: vim/spell/en.utf-8.add
     # bash
-    ~/.profile: profile
-    ~/.bashrc: bashrc
-    ~/.bash_aliases: bash_aliases
-    ~/.bash_aws_config: bash_aws_config
+    ~/.profile: bash/profile
+    ~/.bashrc: bash/bashrc
+    ~/.bash_aliases: bash/bash_aliases
+    ~/.bash_env_vars: bash/bash_env_vars
+    ~/.bash_aws_config: bash/bash_aws_config
     # python
-    ~/.bash_python_config: bash_python_config
+    ~/.bash_python_config: bash/bash_python_config
     ~/.config/pypoetry/config.toml: pypoetry_config.toml
     ~/code/requirements.txt: requirements.txt
     # git
@@ -20,5 +24,5 @@
     ~/.gitattributes: git/gitattributes
     ~/.gitignore: git/gitignore
     ~/.git-templates/hooks/commit-msg: git/git-templates/hooks/commit-msg
-    ~/.commitlintrc.json: commitlintrc.json
+    ~/.commitlintrc.json: git/commitlintrc.json
 
