@@ -29,6 +29,8 @@ nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gy <Plug>(coc-type-definition)
 
 " You might need to run `cd ~/.vim/plugged/coc.nvim; npm ci`
+" If you'd like to install a language server use this to find the right way to
+" configure it: <https://github.com/neoclide/coc.nvim/wiki/Language-servers>
 " python
 " `npm install -g pyright`
 " tex
@@ -36,6 +38,8 @@ nmap <silent> gy <Plug>(coc-type-definition)
 " I installed v5.19.0
 " html
 " `:CocInstall coc-html`
+" markdown
+" `:CocInstall coc-markdownlint`
 
 set ts=4 sw=4
 
