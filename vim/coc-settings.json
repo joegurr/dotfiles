@@ -15,12 +15,12 @@
             "command": "texlab",
             "filetypes": [
                 "tex",
-				"latex",
+                "latex",
                 "bib",
                 "sty"
             ]
-		}
-	},
+        }
+    },
     "suggest": {
         "triggerCompletionWait": 1000
     }
