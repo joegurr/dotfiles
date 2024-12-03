@@ -9,3 +9,5 @@ export GLOBAL_PYTHON_VENV=/home/joe/code/.venv
 export BOOKMARK_FILE=/home/joe/bin/bookmarks.csv
 # associated with ,sc and ,rc
 export COMMANDS_LIST_FILE=/home/joe/bin/commands.csv
+# associated with ,ssg
+export BLOG_TEMPLATE_FILE=/home/joe/bin/blog-template.html
