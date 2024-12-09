@@ -35,6 +35,7 @@ function! CreateBlogHTMLTemplate()
         \ '  <meta name="viewport" content="width=device-width, initial-scale=1.0" />',
         \ '  <title>TITLE</title>',
         \ '  <link rel="stylesheet" href="../style.css" />',
+        \ '  <link rel="alternate" type="application/rss+xml" title="Joe Gurr RSS Feed" href="https://www.joegurr.com/feed.xml">',
         \ '</head>',
         \ '',
         \ '<body>',
