@@ -40,6 +40,14 @@ nmap <silent> gy <Plug>(coc-type-definition)
 " `:CocInstall coc-html`
 " markdown
 " `:CocInstall coc-markdownlint`
+" c
+" language server: clangd
+" `sudo apt-get install clangd-12`
+" as per <https://clangd.llvm.org/installation.html>
+" formatter: clang-format
+" `sudo apt install clang-format`
+" linter/static code analysis: cppcheck
+" `sudo apt install cppcheck`
 
 set ts=4 sw=4
 
