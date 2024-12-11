@@ -48,6 +48,9 @@ nmap <silent> gy <Plug>(coc-type-definition)
 " `sudo apt install clang-format`
 " linter/static code analysis: cppcheck
 " `sudo apt install cppcheck`
+" go
+" lsp is gopls
+" `go install golang.org/x/tools/gopls@latest`
 
 set ts=4 sw=4
 
@@ -68,7 +71,7 @@ set relativenumber
 " Always show the status line at the bottom, even if you only have one window open.
 set laststatus=2
 
-" The backspace key has slightly unintuitive behavior by default.
+" The backspace key has slightly unintuitive behaviour by default.
 set backspace=indent,eol,start
 
 " By default, Vim doesn't let you hide a buffer (i.e. have a buffer that isn't

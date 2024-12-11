@@ -34,6 +34,15 @@
                 "objc",
                 "objcpp"
             ]
+        },
+        "golang": {
+            "command": "gopls",
+            "rootPatterns": [
+                "go.mod"
+            ],
+            "filetypes": [
+                "go"
+            ]
         }
     },
     "suggest": {
