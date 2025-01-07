@@ -4,6 +4,7 @@
     # misc
     ~/.tmux.conf: tmux.conf
     ~/.config/i3/config: i3config
+    ~/.markdownlintrc: markdownlint.json
     # vim
     ~/.vimrc: vim/vimrc
     ~/.vim/functions.vim: vim/functions.vim
