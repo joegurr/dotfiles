@@ -94,7 +94,7 @@ nmap Q <Nop>
 set noerrorbells visualbell t_vb=
 
 " Enable mouse support.
-set mouse+=a
+" set mouse+=a
 
 " don't use the arrow keys!
 nnoremap <Left>  :echoe "Use h"<CR>
