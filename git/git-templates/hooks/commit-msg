@@ -13,7 +13,7 @@ def main(commit_msg_file):
             f.write('\n')
 
     # Run commitlint to check the commit message
-    result = subprocess.run(['commitlint', '-e', commit_msg_file])
+    result = subprocess.run(['npx', 'commitlint', '-e', commit_msg_file])
 
     if result.returncode != 0:
         print("Commit message did not pass commitlint rules.")
