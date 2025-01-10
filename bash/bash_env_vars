@@ -3,6 +3,10 @@
 
 # associated with ,n
 export NOTES_DIR=/home/joe/Documents/notes
+# associated with ,j
+# on non-personal machines notes is for work notes
+# and journal is for personal notes
+export JOURNAL_DIR=/home/joe/Documents/journal
 # associated with git hooks
 export GLOBAL_PYTHON_VENV=/home/joe/code/.venv
 # associated with ,b
