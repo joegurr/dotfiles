@@ -14,7 +14,7 @@
     ~/.profile: bash/profile
     ~/.bashrc: bash/bashrc
     ~/.bash_aliases: bash/bash_aliases
-    ~/.bash_env_vars: bash/bash_env_vars
+    ~/.bash_env_vars.example: bash/bash_env_vars.example
     ~/.bash_aws_config: bash/bash_aws_config
     # python
     ~/.bash_python_config: bash/bash_python_config
