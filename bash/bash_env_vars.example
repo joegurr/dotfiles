@@ -15,3 +15,6 @@ export BOOKMARK_FILE=/home/joe/bin/bookmarks.csv
 export COMMANDS_LIST_FILE=/home/joe/bin/commands.csv
 # associated with ,ssg
 export BLOG_TEMPLATE_FILE=/home/joe/bin/blog-template.html
+# associated with ,sync-spell
+export VSCODE_SETTINGS_FILEPATH=/mnt/c/Users/JosephGurr/AppData/Roaming/Code/User/settings.json
+export VIM_SPELL_FILEPATH=/home/joe/.vim/spell/en.utf-8.add
