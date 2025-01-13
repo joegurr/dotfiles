@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# To have this script run when commiting you can copy it to
+# To have this script run when committing you can copy it to
 # .git/hooks/pre-commit and run chmod +x .git/hooks/pre-commit
 
 echo "python linting and formatting"
