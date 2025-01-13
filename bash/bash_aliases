@@ -15,6 +15,10 @@ alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 
+# year of vim
 alias nvim=vim
 alias code=vim
+
+# reset terminal
+alias reset='deactivate; cd ~; clear'
 
