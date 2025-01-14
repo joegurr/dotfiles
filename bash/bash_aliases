@@ -22,3 +22,5 @@ alias code=vim
 # reset terminal
 alias reset='deactivate; cd ~; clear'
 
+alias black='black --exclude ".venv"'
+alias flake8='flake8 --extend-exclude ".venv, cdk.out" --max-line-length 88'
