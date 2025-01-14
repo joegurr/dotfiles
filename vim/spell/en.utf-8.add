@@ -150,6 +150,7 @@ Pieman
 Planche
 Polya's
 Popen
+Postgres
 Precip
 Presolve
 Productionisation
@@ -229,6 +230,7 @@ amqp
 analysing
 anim
 ap
+api
 apigw
 apparantely
 appendonly
@@ -256,6 +258,7 @@ bashrc
 batterymip
 boto
 botocore
+cartesian
 cattrs
 cd
 cdrive
@@ -346,6 +349,7 @@ figsize
 fillna
 filt
 fipy
+flake8
 flaskparser
 fontsize
 footroom
@@ -565,6 +569,7 @@ satisficing
 savetxt
 scipy
 selectize
+session
 setuptools
 sharex
 shinyapps
