@@ -134,3 +134,14 @@ function! OpenNoteForDay(offset)
 endfunction
 
 command! -nargs=1 Note call OpenNoteForDay(<args>)
+
+nnoremap <silent> K :call ShowDocumentation()<CR>
+
+function! ShowDocumentation()
+    if CocAction('hasProvider','hover')
+        call CocActionAsync('doHover')
+    else
+        call feedkeys('K','in')
+    endif
+endfunction
+
