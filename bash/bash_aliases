@@ -17,10 +17,12 @@ alias mv='mv -i'
 
 # year of vim
 alias nvim=vim
-alias code=vim
+# alias code=vim
 
 # reset terminal
 alias reset='deactivate; cd ~; clear'
 
 alias black='$GLOBAL_PYTHON_VENV/bin/black --extend-exclude "\(\.venv|cdk.out\)"'
 alias flake8='$GLOBAL_PYTHON_VENV/bin/flake8 --extend-exclude ".venv, cdk.out" --max-line-length 88'
+alias ruff='$GLOBAL_PYTHON_VENV/bin/ruff'
+

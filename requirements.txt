@@ -8,3 +8,4 @@ flake8
 # `llm install llm-claude-3`
 # `llm kets set claude`
 tmuxp
+ruff
