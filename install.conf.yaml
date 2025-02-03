@@ -25,6 +25,5 @@
     ~/.gitattributes: git/gitattributes
     ~/.gitignore: git/gitignore
     ~/.git-templates/hooks/commit-msg: git/git-templates/hooks/commit-msg
-    ~/.git-templates/hooks/pre-commit: git/git-templates/hooks/pre-commit
     ~/.commitlintrc.json: git/commitlintrc.json
 
