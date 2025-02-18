@@ -47,6 +47,7 @@ DigiCert
 Docu
 Dotfiles
 Dressler
+EDL's
 EOL
 ESOO
 EVVPP
@@ -145,6 +146,8 @@ OPSO
 Ostrowski's
 PEAKER
 PHEV
+PTN
+PTN's
 PVLITE
 Pandera
 Pangram
@@ -222,6 +225,7 @@ X1
 XINU
 XPOST
 Yarin
+YoY
 abelian
 accum
 addopts
@@ -230,6 +234,7 @@ adics
 advection
 agtech
 aiohttp
+aircrafts
 amqp
 analysing
 anim
@@ -258,6 +263,7 @@ awscli
 axisbelow
 backpropagation
 bargap
+barh
 barmode
 baseurl
 bashrc
@@ -283,6 +289,7 @@ coeff
 cofactor
 collatz
 colorbar
+colormaps
 colour
 com
 commitlint
@@ -356,6 +363,7 @@ explaination
 explanability
 expressivity
 eyev
+facecolor
 falconparser
 fargate
 fastparquet
@@ -363,12 +371,14 @@ favourite
 ffill
 ffnn
 figsize
+figtext
 fillna
 filt
 fipy
 flake8
 flaskparser
 fontsize
+fontweight
 footroom
 forcings
 frequentist
@@ -397,6 +407,7 @@ hilo
 hlength
 horizontalalignment
 html5
+husl
 hyperspheres
 hyperspherical
 hypothesised
@@ -436,6 +447,7 @@ kaiming
 kaleido
 kiwisolver
 kwargs
+labelpad
 labelsize
 lacheck
 langserver
@@ -482,6 +494,7 @@ max
 maxs
 maxv
 mcfly
+mdates
 meetups
 memit
 mesg
@@ -564,6 +577,7 @@ productionise
 productionising
 psql
 psutil
+psycopg
 pyarrow
 pycache
 pycognito
@@ -696,6 +710,7 @@ vmin
 vtype
 w3
 webargs
+whitegrid
 winget
 with
 wsbroker
@@ -717,4 +732,6 @@ ylabel
 ylim
 youtube
 ytick
+yticks
 zcat
+zorder
