@@ -11,6 +11,9 @@ Plug 'morhetz/gruvbox'
 
 Plug 'neoclide/coc.nvim'
 
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+
 call plug#end()
 " :PlugInstall
 
