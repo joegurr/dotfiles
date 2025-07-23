@@ -3,3 +3,7 @@ mysession.yaml
 .envrc
 *.swp
 .env
+*Zone.Identifier
+
+requirements-jupyter.txt
+

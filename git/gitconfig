@@ -14,14 +14,26 @@
 	excludesfile = /home/joe/.gitignore
 	attributesfile = /home/joe/.gitattributes
 	editor = vim
+	pager = delta
 
 [filter "nb-clean"]
-    clean = /home/joe/code/.venv/bin/nb-clean clean
-    smudge = cat
-    required = true
+	clean = /home/joe/code/.venv/bin/nb-clean clean
+	smudge = cat
+	required = true
 
 [gpg]
 	format = ssh
 
 [commit]
 	gpgsign = true
+
+[interactive]
+	diffFilter = delta --color-only
+
+[delta]
+	navigate = true
+	side-by-side=true
+
+[merge]
+	conflictStyle = diff3
+

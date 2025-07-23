@@ -1,6 +1,5 @@
 nb-clean
 pyright
-black
 black[jupyter]
 llm
 flake8
@@ -9,3 +8,4 @@ flake8
 # `llm kets set claude`
 tmuxp
 ruff
+
