@@ -37,3 +37,6 @@
 [merge]
 	conflictStyle = diff3
 
+[credential]
+	helper = store
+

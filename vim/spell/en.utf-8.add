@@ -64,6 +64,7 @@ FCASDEV
 FE
 Fenchel
 Frenchies
+Frontend
 GANs
 GITHASH
 GR4J
@@ -103,6 +104,7 @@ Jeykll
 Journalier
 KPIs
 Kai
+Kai's
 Kalman
 Kazuo
 Kepert
@@ -224,6 +226,7 @@ TWOHUNDREDFORTY
 Tgtk
 Thinkpad
 Tweety
+UAT
 Useability
 VAE
 VPP
@@ -490,6 +493,7 @@ json
 jsonify
 jti
 junitxml
+jupyter
 jupyterlab
 jwt
 kaiming
@@ -727,6 +731,7 @@ submatrix
 subseteq
 supremum
 suptitle
+swp
 synctex
 tarsnap
 telnet
@@ -780,6 +785,7 @@ visualise
 vlength
 vmax
 vmin
+vscode
 vtype
 w3
 webargs
@@ -801,6 +807,7 @@ xlsxwriter
 xml
 xtick
 xticks
+yaml
 yaxis
 ylab
 ylabel
