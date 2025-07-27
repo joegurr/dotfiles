@@ -26,6 +26,8 @@ CSIRO
 CUMEC
 Calib
 Canyoning
+Cartesian
+Cartesian's
 Cipriani
 Cipriani's
 CloudFormation
@@ -202,6 +204,7 @@ Rubiks
 Runoff
 S4
 SEIR
+SES
 SGD
 SICP
 SLURM
@@ -222,6 +225,7 @@ Symfony
 T00
 TODO
 TORUSDEV
+TOS
 TWOHUNDREDFORTY
 Tgtk
 Thinkpad
@@ -303,6 +307,7 @@ cartesian
 cartesianapidb
 cattrs
 cd
+cdk
 cdrive
 cenv
 certificatemanager
@@ -671,6 +676,7 @@ rabbimq
 rabbitmq
 randn
 rb
+rc1
 realised
 recieving
 redis
