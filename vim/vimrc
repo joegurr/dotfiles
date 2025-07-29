@@ -54,6 +54,8 @@ nmap <silent> gy <Plug>(coc-type-definition)
 " go
 " lsp is gopls
 " `go install golang.org/x/tools/gopls@latest`
+" javascript/typescript
+" `:CocInstall coc-tsserver`
 
 set ts=4 sw=4
 
