@@ -172,3 +172,4 @@ endfunction
 
 nnoremap <C-j> :call ScrollPopup(3)<CR>
 nnoremap <C-k> :call ScrollPopup(-3)<CR>
+
