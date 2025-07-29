@@ -4,6 +4,3 @@ mysession.yaml
 *.swp
 .env
 *Zone.Identifier
-
-requirements-jupyter.txt
-
