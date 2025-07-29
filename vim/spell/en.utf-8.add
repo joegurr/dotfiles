@@ -3,6 +3,8 @@ AEMC
 AEMO
 ANOVA
 APSIM
+ARN
+ARNs
 ARWF
 ASHS
 AWS
@@ -15,6 +17,9 @@ Autoencoders
 BESS
 BNN
 Backprop
+BatteryMaker
+BatteryMakerStack
+Beej's
 Blockchain
 Blowering
 CAPEX
@@ -28,14 +33,20 @@ Calib
 Canyoning
 Cartesian
 Cartesian's
+CartesianApi
+CartesianApiStack
+CartesianSoftware
 Cipriani
 Cipriani's
 CloudFormation
+CloudFront
+Cloudwatch
 Cognito
 Colours
 Columbo
 Constr
 Crit
+CyberPro
 DCCEEW
 DERATING
 DESS
@@ -173,6 +184,7 @@ Popen
 Postgres
 Precip
 Presolve
+PriceProjection
 PriceProjectionStack
 Productionisation
 Prolog
@@ -216,6 +228,7 @@ SWIS
 Sahani
 Sarat
 Sarat's
+SharedStack
 Similiarity
 Slacklining
 Smirnov
@@ -233,6 +246,7 @@ Tweety
 UAT
 Useability
 VAE
+VPC
 VPP
 VTOH
 Vrbik
@@ -256,6 +270,7 @@ agtech
 aiohttp
 aircrafts
 aleatoric
+amazonaws
 amqp
 analysing
 anim
@@ -283,6 +298,7 @@ autoencoders
 autojump
 aws
 awscli
+awsebcli
 axisbelow
 azim
 backend
@@ -381,6 +397,7 @@ dsdt
 dtype
 dtypes
 dups
+eb
 edgecolor
 elasticloadbalancingv
 elbv
@@ -538,6 +555,7 @@ listdir
 litera
 loglike
 logsumexp
+macOS
 mako
 manifoldsequel
 markdownlint
@@ -557,6 +575,7 @@ max
 maxs
 maxv
 mcfly
+md
 mdates
 meetups
 memit
@@ -710,6 +729,7 @@ selectize
 session
 sessionmaker
 setuptools
+sharedstack
 sharex
 sharey
 shinyapps
@@ -776,6 +796,8 @@ usecols
 usetex
 utf
 utils
+v3
+v4
 vapor
 var
 varepsilon
