@@ -4,3 +4,7 @@ mysession.yaml
 *.swp
 .env
 *Zone.Identifier
+.envrc-DEV
+.envrc-UAT
+.envrc-PROD
+
