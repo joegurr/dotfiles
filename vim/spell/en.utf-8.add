@@ -70,7 +70,9 @@ EOL
 ESOO
 EVVPP
 EXCEEDANCE
+ElastiCache
 Eleonore
+EmailType
 Eraring
 Evap
 Exercism
@@ -230,6 +232,8 @@ SGD
 SICP
 SLURM
 SPSS
+SQLAlchemy
+SQLAlchemy's
 SRMC
 STEPHANODEV
 STEPHANOPROD
@@ -253,6 +257,7 @@ TWOHUNDREDFORTY
 TWh
 Tgtk
 Thinkpad
+ToolStacks
 Tweety
 UAT
 Useability
@@ -331,6 +336,7 @@ boldsymbol
 booktitle
 boto
 botocore
+bruno
 cartesian
 cartesianapidb
 cattrs
@@ -343,6 +349,7 @@ cext
 characterise
 chdir
 choicelist
+cli
 cmap
 coc
 codomain
@@ -572,6 +579,7 @@ listdir
 litera
 loglike
 logsumexp
+lowercase
 macOS
 mako
 manifoldsequel
@@ -619,6 +627,7 @@ mymodel
 mypassword
 mypy
 mysession
+münchen
 nans
 navs
 navset
@@ -723,6 +732,7 @@ refname
 reframing
 refs
 refyear
+regex
 relu
 renewables
 reparameterised
@@ -771,6 +781,7 @@ ssh
 stackoverflow
 stephano
 studentt
+subclassing
 subdemand
 submatrix
 subseteq
@@ -806,6 +817,7 @@ typer
 uat
 udemy
 understadning
+unicode
 uninterpretable
 unretired
 unserved
@@ -837,6 +849,7 @@ vtype
 w3
 webargs
 whitegrid
+whitespace
 winget
 with
 writelp

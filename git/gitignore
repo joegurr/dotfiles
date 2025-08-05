@@ -7,4 +7,7 @@ mysession.yaml
 .envrc-DEV
 .envrc-UAT
 .envrc-PROD
+CLAUDE.md
+draft*
+DRAFT*
 
