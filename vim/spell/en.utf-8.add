@@ -63,6 +63,7 @@ Ditlevsen
 Docu
 Dotfiles
 Dressler
+EC2
 ECR
 EDL's
 ENH
@@ -70,6 +71,7 @@ EOL
 ESOO
 EVVPP
 EXCEEDANCE
+EXPR
 ElastiCache
 Eleonore
 EmailType
@@ -91,6 +93,7 @@ Gaussians
 Gentine
 Georg
 Gian
+GitLab
 Gregors
 Gurobi
 Gurr
@@ -143,6 +146,7 @@ LRMC
 LTS
 Laravel
 Lenovo
+LogToConsole
 MANOVA
 MCMC
 MINLP
@@ -166,7 +170,9 @@ NN
 NNSW
 NNs
 NPKET
+NUM
 Navin
+Navin's
 Neumann
 Normalise
 Novemeber
@@ -177,6 +183,7 @@ ONEHUNDREDTWENTY
 OPEX
 OPSO
 Ostrowski's
+OutputFlag
 PEAKER
 PHEV
 POE
@@ -231,6 +238,7 @@ SES
 SGD
 SICP
 SLURM
+SOC
 SPSS
 SQLAlchemy
 SQLAlchemy's
@@ -245,8 +253,10 @@ SharedStack
 Similiarity
 Slacklining
 Smirnov
+Steph
 Steren
 Sublocales
+Supabase
 Symfony
 T00
 TODO
@@ -257,8 +267,10 @@ TWOHUNDREDFORTY
 TWh
 Tgtk
 Thinkpad
+TimeLimit
 ToolStacks
 Tweety
+TypeScript
 UAT
 Useability
 VAE
@@ -271,6 +283,7 @@ WLSACCESSID
 WLSSECRET
 WYAH
 WYAS
+Wellbeing
 X1
 XINU
 XPOST
@@ -397,6 +410,7 @@ defn
 deque
 deref
 deriv
+df
 didt
 direnv
 dispatchmodel
@@ -468,6 +482,7 @@ fstring
 functionals
 functools
 fy
+gaussian
 gb
 getattr
 getenv
@@ -482,6 +497,7 @@ gppd
 gridcolor
 gridspec
 gunicorn
+gurobi
 gurobipy
 hadamard
 hasattr
@@ -514,6 +530,7 @@ indiv
 infeas
 infty
 init
+inplace
 insgihtful
 inten
 intens
@@ -617,10 +634,12 @@ minmax
 minorants
 mkspell
 monomorphisms
+more
 mpimg
 mqtt
 msecs
 msg
+mult
 myapp
 myclientid
 mymodel
@@ -634,6 +653,7 @@ navset
 nb
 nbconvert
 nbstripout
+ncycles
 ndarray
 nem
 netrw
@@ -685,6 +705,7 @@ postgres
 postgresadmin
 postgresql
 potevap
+pq
 pred
 predual
 prefetch
@@ -740,6 +761,7 @@ repn
 repr
 resp
 revokedtoken
+rhs
 rightarrow
 rm
 rsconnect
@@ -772,11 +794,13 @@ skiprows
 sklearn
 skyblue
 slackline
+soc
 soln
 southeast
 spacelab
 splitlines
 sqlalchemy
+sqlite
 ssh
 stackoverflow
 stephano
@@ -848,6 +872,7 @@ vscode
 vtype
 w3
 webargs
+wellbeing
 whitegrid
 whitespace
 winget
@@ -876,5 +901,6 @@ youtube
 ytick
 yticks
 zcat
+zipfile
 zlabel
 zorder

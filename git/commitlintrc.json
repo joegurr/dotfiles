@@ -20,7 +20,8 @@
         "config",
         "notes",
         "revert",
-        "typo"
+        "typo",
+        "rel"
       ]
     ],
     "scope-enum": [

@@ -129,7 +129,17 @@ nmap <silent> ]g <Plug>(coc-diagnostic-next)
 
 " GoTo code navigation
 nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
+" nmap <silent> gy <Plug>(coc-type-definition)
+" nmap <silent> gi <Plug>(coc-implementation)
+" nmap <silent> gr <Plug>(coc-references)
 
+" nmap <leader>rn <Plug>(coc-rename)
+" nmap <leader>f  <Plug>(coc-format-selected)
+
+" Add `:Format` command to format current buffer
+" command! -nargs=0 Format :call CocActionAsync('format')
+
+" " Add `:Fold` command to fold current buffer
+" command! -nargs=? Fold :call     CocAction('fold', <f-args>)
+
+set foldcolumn=1
