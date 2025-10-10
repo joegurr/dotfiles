@@ -1,1 +1,1 @@
-export AWS_DEFAULT_PROFILE=admin-dev
+# export AWS_DEFAULT_PROFILE=DEV

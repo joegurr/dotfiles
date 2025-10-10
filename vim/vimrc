@@ -23,13 +23,16 @@ let g:hardtime_showmsg = 1
 
 " colour scheme
 set background=dark
-autocmd vimenter * ++nested colorscheme gruvbox
+
+augroup gruvbox
+    autocmd vimenter * ++nested colorscheme gruvbox
+augroup END
 
 " coc
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gr <Plug>(coc-references)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gy <Plug>(coc-type-definition)
+nnoremap <silent> gd <Plug>(coc-definition)
+nnoremap <silent> gr <Plug>(coc-references)
+nnoremap <silent> gi <Plug>(coc-implementation)
+nnoremap <silent> gy <Plug>(coc-type-definition)
 
 " You might need to run `cd ~/.vim/plugged/coc.nvim; npm ci`
 " If you'd like to install a language server use this to find the right way to
@@ -93,7 +96,7 @@ set smartcase
 set incsearch
 
 " Unbind some useless/annoying default key bindings.
-nmap Q <Nop>
+nnoremap Q <Nop>
 
 " Disable audible bell because it's annoying.
 set noerrorbells visualbell t_vb=
@@ -116,6 +119,8 @@ set list listchars=tab:>-,trail:.
 
 set foldmethod=manual
 
+set splitright
+set wrap
 set expandtab
 set softtabstop=4
 
@@ -124,17 +129,17 @@ source ~/.vim/functions.vim
 
 " Use `[g` and `]g` to navigate diagnostics
 " Use `:CocDiagnostics` to get all diagnostics of current buffer in location
-nmap <silent> [g <Plug>(coc-diagnostic-prev)
-nmap <silent> ]g <Plug>(coc-diagnostic-next)
+nnoremap <silent> [g <Plug>(coc-diagnostic-prev)
+nnoremap <silent> ]g <Plug>(coc-diagnostic-next)
 
 " GoTo code navigation
-nmap <silent> gd <Plug>(coc-definition)
-" nmap <silent> gy <Plug>(coc-type-definition)
-" nmap <silent> gi <Plug>(coc-implementation)
-" nmap <silent> gr <Plug>(coc-references)
+nnoremap <silent> gd <Plug>(coc-definition)
+" nnoremap <silent> gy <Plug>(coc-type-definition)
+" nnoremap <silent> gi <Plug>(coc-implementation)
+" nnoremap <silent> gr <Plug>(coc-references)
 
-" nmap <leader>rn <Plug>(coc-rename)
-" nmap <leader>f  <Plug>(coc-format-selected)
+" nnoremap <leader>rn <Plug>(coc-rename)
+" nnoremap <leader>f  <Plug>(coc-format-selected)
 
 " Add `:Format` command to format current buffer
 " command! -nargs=0 Format :call CocActionAsync('format')
@@ -143,3 +148,13 @@ nmap <silent> gd <Plug>(coc-definition)
 " command! -nargs=? Fold :call     CocAction('fold', <f-args>)
 
 set foldcolumn=1
+
+" learn vimscript the hard way
+let mapleader=','
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+nnoremap <leader>sv :source $MYVIMRC<cr>
+
+iabbrev @@ me@joegurr.com
+iabbrev adn and
+" inoremap jk <esc>
+" inoremap <esc> <nop>

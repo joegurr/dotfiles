@@ -4,10 +4,8 @@ mysession.yaml
 *.swp
 .env
 *Zone.Identifier
-.envrc-DEV
-.envrc-UAT
-.envrc-PROD
+*.envrc*
+!.env.example
 CLAUDE.md
 draft*
 DRAFT*
-
