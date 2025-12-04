@@ -5,6 +5,7 @@ mysession.yaml
 .env
 *Zone.Identifier
 *.envrc*
+!.envrc-check.sh
 !.env.example
 CLAUDE.md
 draft*
