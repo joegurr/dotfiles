@@ -39,6 +39,7 @@ BESS
 BNN
 Baba
 Backprop
+BadGateway
 Bajaj
 BatchCheckLayerAvailability
 BatchGetImage
@@ -58,6 +59,7 @@ CAPEX
 CDK
 CEFC
 CLIENTENV
+CNAME
 CONNACK
 CSIRO
 CUMEC
@@ -114,6 +116,7 @@ DescribeRepositories
 DescribeSecret
 Desicion
 Diagonalisation
+Dict
 DigiCert
 DisableIMDSv1
 Ditlevsen
@@ -420,6 +423,7 @@ SecretList
 SecurityGroups
 ServicePrincipal
 ServiceRole
+ServiceUnavailable
 SharedStack
 Siddhartha
 Similiarity
@@ -468,6 +472,7 @@ VPC
 VPCId
 VPP
 VTOH
+ValueError
 VarName
 Vonnegut
 Vrbik
@@ -727,6 +732,7 @@ gridspec
 gunicorn
 gurobi
 gurobipy
+hacky
 hadamard
 hardcoded
 hasattr
@@ -1105,6 +1111,7 @@ unsqueeze
 url
 usecols
 usetex
+utc
 utf
 utils
 uuid
