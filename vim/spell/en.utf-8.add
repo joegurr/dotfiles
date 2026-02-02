@@ -37,6 +37,7 @@ AuthenticationResult
 Autoencoders
 BESS
 BNN
+BNNs
 Baba
 Backprop
 BadGateway
@@ -106,6 +107,7 @@ Dann
 Dantzig
 DeleteObject
 DeleteOnTerminate
+Denoise
 DescribeDBInstances
 DescribeDBSnapshots
 DescribeEnvironments
@@ -120,11 +122,13 @@ Dict
 DigiCert
 DisableIMDSv1
 Ditlevsen
+Dockerise
 Docu
 Dotfiles
 Doxiadis
 Dressler
 DynamoDB
+E501
 EC2
 ECR
 EDL's
@@ -143,12 +147,14 @@ EndgameAnalyticsIdentity
 Eraring
 Evap
 Evaristo
+Exceedance
 Exercism
 Exupéry
 F1
 FCAS
 FCASDEV
 FE
+FeedforwardSecondary
 Fenchel
 Frenchies
 Frontend
@@ -251,6 +257,7 @@ LRMC
 LTS
 Laravel
 Lenovo
+LinearRegressor
 ListBucket
 ListBucketMultipartUploads
 ListBucketVersions
@@ -265,12 +272,16 @@ LoadBalancerHTTPPort
 LoadBalancerHTTPSPort
 LogToConsole
 MANOVA
+MC
 MCMC
 MINLP
 MIP
 MLE
+MLP
+MLPRegressor
 MNSP
 MSE
+MVP
 MWh
 MYEAFU
 Macquarie
@@ -303,12 +314,14 @@ NN
 NNSW
 NNs
 NPKET
+NSW
 NUM
 Nagel
 Narada
 Navin
 Navin's
 Neumann
+NeurIPS
 Neurosexism
 Nico's
 Noam
@@ -322,6 +335,7 @@ ONEHUNDREDEIGHTY
 ONEHUNDREDTWENTY
 OPEX
 OPSO
+Onboarding
 Ostrowski's
 OutputFlag
 PARAMS
@@ -339,6 +353,8 @@ Pagendam
 Palast
 Pandera
 Pangram
+Paramancer
+ParameterSpec
 Pascoe
 Peppernell
 Petros
@@ -359,15 +375,19 @@ Presolve
 PriceProjection
 PriceProjectionStack
 PriceSpecification
+PrimaryModel
 Productionisation
 Prolog
 Prue
 PutImage
 PutObject
+PyPI
+PyTorch
 Q1
 Q2
 Q3
 Q4
+QLD
 QUIC
 Qsim
 Quadient
@@ -385,6 +405,7 @@ RUGBYR
 Raul
 Rayna
 Redpoint
+Refactorings
 Reimagining
 ResumeSession
 RetentionInDays
@@ -419,6 +440,7 @@ Sahani
 Sarat
 Sarat's
 Sayaka
+SecondaryModel
 SecretList
 SecurityGroups
 ServicePrincipal
@@ -444,6 +466,7 @@ Supabase
 Symfony
 SystemType
 T00
+TAS
 TIMESTAMP
 TODO
 TODOs
@@ -458,15 +481,19 @@ Tgtk
 Thinkpad
 TimeLimit
 Timequake
+TodoWrite
 ToolStacks
 Tweety
+TwoModelTrainer
 TypeScript
 UAT
+UQ
 UUID
 UUIDs
 UploadLayerPart
 Useability
 VAE
+VAEs
 VCPU
 VPC
 VPCId
@@ -477,6 +504,7 @@ VarName
 Vonnegut
 Vrbik
 WACC
+WEM
 WEMPriceProjectionSpecification
 WLSACCESSID
 WLSSECRET
@@ -497,6 +525,7 @@ accum
 addopts
 adic
 adics
+adm
 advection
 agtech
 aiohttp
@@ -523,6 +552,7 @@ archietcutre
 args
 arn
 arrayjob
+artifacts
 arzela
 ascoli
 asdict
@@ -573,6 +603,8 @@ cext
 characterise
 chdir
 choicelist
+cleanup
+cleanups
 cli
 cloudfront
 cloudwatch
@@ -583,6 +615,7 @@ coeff
 cofactor
 cognito
 collatz
+color
 colorbar
 colormaps
 colour
@@ -594,6 +627,8 @@ conda
 condlist
 conf
 config
+configs
+conftest
 constrname
 constrs
 contrib
@@ -622,6 +657,8 @@ db
 dedt
 defaultdict
 defn
+defs
+dependabot
 deque
 deref
 deriv
@@ -645,6 +682,7 @@ drdt
 dropboxd
 droplevel
 dsdt
+dt
 dtype
 dtypes
 dups
@@ -719,6 +757,7 @@ getenv
 gitatributes
 gitattributes
 gitconfig
+githooks
 github
 githubusercontent
 gitignore
@@ -726,6 +765,7 @@ glpk
 gnarly
 gp3
 gppd
+gpu
 grb
 gridcolor
 gridspec
@@ -757,6 +797,7 @@ hypothesised
 i
 i3config
 iam
+igm
 ilike
 iloc
 imread
@@ -779,11 +820,13 @@ ipykernel
 ipynb
 isin
 isna
+isort
 isouter
 isready
 iterrows
 java
 jinja
+joe
 joegit
 joegurr
 jsii
@@ -829,6 +872,7 @@ linalg
 linecolor
 linestyle
 linewidth
+linter
 linux
 listdir
 litera
@@ -840,6 +884,7 @@ lowercase
 lp
 macOS
 mako
+mancer
 manifoldsequel
 markdownlint
 markdownlintrc
@@ -874,6 +919,7 @@ minibatch
 minmax
 minorants
 mkspell
+mlflow
 monomorphisms
 more
 mpimg
@@ -898,6 +944,7 @@ nbconvert
 nbstripout
 ncycles
 ndarray
+necro
 nem
 netrw
 newaxis
@@ -931,11 +978,15 @@ outerjoin
 paho
 pandera
 pandoc
+paramancer
+parameterise
+parameterize
 paramètres
 pathspec
 pdflatex
 pdfpagemode
 pem
+pep8
 perc
 pgadmin
 platformdirs
@@ -967,17 +1018,21 @@ psql
 psutil
 psycopg
 pw
+py
 pyarrow
 pycache
+pycodestyle
 pycognito
 pydantic
 pydatetime
 pydoe
 pyenv
+pyflakes
 pyjwt
 pyomo
 pyplot
 pypoetry
+pyproject
 pyright
 pytest
 qrcode
@@ -1015,6 +1070,7 @@ revokedtoken
 rhs
 rightarrow
 rm
+rollbacks
 rsconnect
 rss
 rundispatchmodels
@@ -1027,6 +1083,7 @@ satisficing
 savetxt
 scikit
 scipy
+seaborn
 secretsmanager
 selectize
 ses
@@ -1055,6 +1112,7 @@ spacelab
 splitlines
 sqlalchemy
 sqlite
+src
 ssh
 ssm
 stackoverflow
@@ -1068,6 +1126,7 @@ studentt
 subclassing
 subdemand
 submatrix
+subpackage
 subseteq
 supremum
 suptitle
@@ -1103,6 +1162,7 @@ typer
 uat
 udemy
 understadning
+unflatten
 unicode
 uninterpretable
 unretired
@@ -1115,6 +1175,7 @@ utc
 utf
 utils
 uuid
+uv
 v1
 v3
 v4
@@ -1138,6 +1199,7 @@ vpc
 vscode
 vtype
 w3
+wandb
 webargs
 wellbeing
 whitegrid
