@@ -33,6 +33,7 @@ function! CreateBlogHTMLTemplate()
         \ '<head>',
         \ '  <meta charset="UTF-8" />',
         \ '  <meta name="viewport" content="width=device-width, initial-scale=1.0" />',
+        \ '  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>',
         \ '  <title>TITLE</title>',
         \ '  <link rel="stylesheet" href="../style.css" />',
         \ '  <link rel="alternate" type="application/rss+xml" title="Joe Gurr RSS Feed" href="https://www.joegurr.com/feed.xml">',
