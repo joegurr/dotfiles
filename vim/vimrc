@@ -11,8 +11,8 @@ Plug 'morhetz/gruvbox'
 
 Plug 'neoclide/coc.nvim'
 
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
+" Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+" Plug 'junegunn/fzf.vim'
 
 call plug#end()
 " :PlugInstall
@@ -158,3 +158,8 @@ iabbrev @@ me@joegurr.com
 iabbrev adn and
 " inoremap jk <esc>
 " inoremap <esc> <nop>
+
+if executable("rg")
+    set grepprg=rg\ --vimgrep
+endif
+
