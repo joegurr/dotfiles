@@ -10,3 +10,5 @@ mysession.yaml
 CLAUDE.md
 draft*
 DRAFT*
+.claude/*
+
