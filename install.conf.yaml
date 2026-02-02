@@ -26,4 +26,4 @@
     ~/.gitignore: git/gitignore
     ~/.git-templates/hooks/commit-msg: git/git-templates/hooks/commit-msg
     ~/.commitlintrc.json: git/commitlintrc.json
-
+    ~/.config/jj/config.toml: jj-config.toml

@@ -1,0 +1,8 @@
+#:schema https://jj-vcs.github.io/jj/latest/config-schema.json
+
+[user]
+name = "Joe Gurr"
+email = "me@joegurr.com"
+
+[ui]
+editor = "vim"
