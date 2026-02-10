@@ -11,6 +11,7 @@ Plug 'morhetz/gruvbox'
 
 Plug 'neoclide/coc.nvim'
 
+Plug 'tpope/vim-surround'
 " Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 " Plug 'junegunn/fzf.vim'
 
