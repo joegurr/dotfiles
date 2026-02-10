@@ -12,6 +12,7 @@ AWSBatchServiceRole
 AWSElasticBeanstalkService
 AWSElasticBeanstalkWebTier
 AWSSRP
+AZs
 AddTagsToResource
 Ahona
 Albom
@@ -29,6 +30,8 @@ Angaston
 Apostolos
 Appignanesi
 Arapiles
+Arnaud
+Arnaud's
 Arzela
 Arzelà
 AssociatePublicIpAddress
@@ -56,12 +59,14 @@ Blockchain
 Blowering
 Bolkovac
 Bourdain
+Brothier
 CAPEX
 CDK
 CEFC
 CLIENTENV
 CNAME
 CONNACK
+CORS
 CSIRO
 CUMEC
 Calib
@@ -87,6 +92,7 @@ Columbo
 CompleteLayerUpload
 ConfigurationSet
 Constr
+ConvexHull
 Cordelia
 CreateDBSnapshot
 CreateInvalidation
@@ -123,6 +129,7 @@ DigiCert
 DisableIMDSv1
 Ditlevsen
 Dockerise
+Dockerized
 Docu
 Dotfiles
 Doxiadis
@@ -208,6 +215,7 @@ Http3
 Hypersphere
 INTERCONNECTORS
 IPCC
+IaC
 IamInstanceProfile
 IdToken
 Improv
@@ -307,6 +315,7 @@ Mukherjee
 Murakami
 Murata
 Murramarang
+NAT
 NEERABUP
 NEM
 NEMPriceProjectionSpecification
@@ -373,6 +382,7 @@ Precip
 Presigned
 Presolve
 PriceProjection
+PriceProjectionSpecification
 PriceProjectionStack
 PriceSpecification
 PrimaryModel
@@ -432,6 +442,7 @@ SQLAlchemy's
 SRMC
 SSLCertificateId
 SSM
+SSO
 STEPHANODEV
 STEPHANOPROD
 STR
@@ -442,6 +453,7 @@ Sarat's
 Sayaka
 SecondaryModel
 SecretList
+SecretsManager
 SecurityGroups
 ServicePrincipal
 ServiceRole
@@ -528,9 +540,11 @@ adics
 adm
 advection
 agtech
+ai
 aiohttp
 aircrafts
 aleatoric
+allowlist
 amazonaws
 amd64
 amqp
@@ -596,6 +610,7 @@ cartesianapidb
 cattrs
 cd
 cdk
+cdot
 cdrive
 cenv
 certificatemanager
@@ -603,6 +618,7 @@ cext
 characterise
 chdir
 choicelist
+claude
 cleanup
 cleanups
 cli
@@ -662,6 +678,7 @@ dependabot
 deque
 deref
 deriv
+deserialisation
 df
 dict
 didt
@@ -816,6 +833,7 @@ intepreted
 intercon
 intercons
 invertibility
+io
 ipykernel
 ipynb
 isin
@@ -848,11 +866,13 @@ labelfont
 labelpad
 labelsize
 lacheck
+langle
 langserver
 laravel
 latexindent
 latexmk
 launchconfiguration
+leq
 levelname
 libarrow
 libbz
@@ -975,6 +995,7 @@ org
 organisation
 os
 outerjoin
+overline
 paho
 pandera
 pandoc
@@ -994,6 +1015,7 @@ plexos
 plotdata
 plotly
 plugin
+pointwise
 portNumber
 posteriorPredictiveModel
 postgres
@@ -1001,6 +1023,7 @@ postgresadmin
 postgresql
 potevap
 pq
+pragma
 pred
 predual
 prefetch
@@ -1044,6 +1067,7 @@ qyear
 rabbimq
 rabbitmq
 randn
+rangle
 rb
 rc1
 rds
@@ -1141,6 +1165,7 @@ testpaths
 testplot
 tetris
 texlab
+textbf
 textfont
 th
 tickangle
@@ -1152,6 +1177,7 @@ timedelta
 titlesize
 tmux
 tmuxp
+tod
 todos
 toml
 tqdm
