@@ -15,10 +15,13 @@ uv lock --check
 echo "Linting"
 uvx ruff check .
 
-echo "Checking formatting"
-uvx ruff format --check .
+# echo "Checking formatting"
+# uvx ruff format --check .
 
-echo "Running tests"
-uvx pytest
+# echo "Running tests"
+# uvx pytest || test $? -eq 5 #  when pytest finds 0 tests the return code is 5, this check says that is okay
+
+echo "Running pre-commit"
+uvx pre-commit
 
 echo "All checks passed!"
