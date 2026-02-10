@@ -24,6 +24,8 @@
     ~/.gitconfig: git/gitconfig
     ~/.gitattributes: git/gitattributes
     ~/.gitignore: git/gitignore
-    ~/.git-templates/hooks/commit-msg: git/git-templates/hooks/commit-msg
+    ~/.git-hooks/commit-msg: git/hooks/commit-msg
+    ~/.git-hooks/python-pre-push: git/hooks/python-pre-push
     ~/.commitlintrc.json: git/commitlintrc.json
+    # jj
     ~/.config/jj/config.toml: jj-config.toml

@@ -1,0 +1,24 @@
+#! /bin/bash
+
+set -e
+
+if git grep --cached -q 'TODO'; then
+    echo 'Your commit contains TODO comments. Resolve them before committing.'
+    exit 1
+fi
+
+echo "Running pre-push checks"
+
+echo "Checking lock file is up to date"
+uv lock --check
+
+echo "Linting"
+uvx ruff check .
+
+echo "Checking formatting"
+uvx ruff format --check .
+
+echo "Running tests"
+uvx pytest
+
+echo "All checks passed!"
