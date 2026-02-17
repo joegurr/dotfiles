@@ -125,4 +125,5 @@ export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin/
 
 export PATH="/home/joe/.ebcli-virtual-env/executables:$PATH"
 
-export MANPAGER="sh -c 'awk '\''{ gsub(/\x1B\[[0-9;]*m/, \"\", \$0); gsub(/.\x08/, \"\", \$0); print }'\'' | bat -p -lman'"
+export MANPAGER="sh -c 'awk '\''{ gsub(/\x1B\[[0-9;]*m/, \"\", \$0); gsub(/.\x08/, \"\", \$0); print }'\'' | batcat -p -lman'"
+. "$HOME/.cargo/env"

@@ -26,4 +26,4 @@ alias black='$GLOBAL_PYTHON_VENV/bin/black --extend-exclude "\(\.venv|cdk.out\)"
 alias flake8='$GLOBAL_PYTHON_VENV/bin/flake8 --extend-exclude ".venv, cdk.out" --max-line-length 88'
 alias ruff='$GLOBAL_PYTHON_VENV/bin/ruff'
 alias nb-clean='$GLOBAL_PYTHON_VENV/bin/nb-clean'
-
+alias bat='batcat'
