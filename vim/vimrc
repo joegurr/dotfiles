@@ -23,7 +23,7 @@ let g:env_var_gruvbox_background = $VIM_GRUVBOX_BACKGROUND
 if g:env_var_gruvbox_background != ""
   execute 'set background=' . g:env_var_gruvbox_background
 else
-  set background='dark'
+  set background=dark
 endif
 
 if g:env_var_gruvbox_background == "light"
