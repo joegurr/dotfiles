@@ -27,6 +27,7 @@ AmazonECSTaskExecutionRolePolicy
 AmazonSSMManagedInstanceCore
 Ananyo
 Angaston
+Ansible
 Apostolos
 Appignanesi
 Arapiles
@@ -68,6 +69,7 @@ CNAME
 CONNACK
 CORS
 CSIRO
+CTRL
 CUMEC
 Calib
 Canyoning
@@ -167,6 +169,8 @@ Frenchies
 Frontend
 GANs
 GITHASH
+GMC
+GPLv3
 GR4J
 GWH
 Gastro
@@ -346,6 +350,7 @@ ONEHUNDREDEIGHTY
 ONEHUNDREDTWENTY
 OPEX
 OPSO
+OSX
 Onboarding
 Ostrowski's
 OutputFlag
@@ -432,6 +437,8 @@ Roxy
 Rubiks
 Runoff
 S4
+SASS
+SCSS
 SEIR
 SES
 SGD
@@ -517,11 +524,13 @@ ValueError
 VarName
 Vonnegut
 Vrbik
+Vue
 WACC
 WEM
 WEMPriceProjectionSpecification
 WLSACCESSID
 WLSSECRET
+WSL
 WYAH
 WYAS
 Waleed
@@ -636,6 +645,7 @@ collatz
 color
 colorbar
 colormaps
+colors
 colour
 com
 commitlint
@@ -846,6 +856,7 @@ isready
 iterrows
 java
 jinja
+jinja2
 joe
 joegit
 joegurr
@@ -1060,6 +1071,7 @@ pypoetry
 pyproject
 pyright
 pytest
+pyupgrade
 qrcode
 quant
 queryKeys
@@ -1228,12 +1240,14 @@ vscode
 vtype
 w3
 wandb
+wayland
 webargs
 wellbeing
 whitegrid
 whitespace
 winget
 with
+wl
 writelp
 wsbroker
 wspace
