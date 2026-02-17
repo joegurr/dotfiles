@@ -62,9 +62,7 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 # Python configuration
-if [ -f ~/.bash_python_config ]; then
-    . ~/.bash_python_config
-fi
+export PIP_REQUIRE_VIRTUALENV=true
 
 # aws cli configuration
 if [ -f ~/.bash_aws_config ]; then
