@@ -119,3 +119,16 @@ fi
 export PATH="/home/joe/.ebcli-virtual-env/executables:$PATH:/opt:/home/joe/bin"
 
 export MANPAGER="sh -c 'awk '\''{ gsub(/\x1B\[[0-9;]*m/, \"\", \$0); gsub(/.\x08/, \"\", \$0); print }'\'' | batcat -p -lman'"
+
+load-aws-profile() {
+  local profile=${1:?usage: load-aws-profile <profile>}
+  local creds
+
+  creds=$(aws configure export-credentials --profile "$profile" --format process) || return 1
+
+  export AWS_ACCESS_KEY_ID=$(printf '%s' "$creds" | jq -r '.AccessKeyId')
+  export AWS_SECRET_ACCESS_KEY=$(printf '%s' "$creds" | jq -r '.SecretAccessKey')
+  export AWS_SESSION_TOKEN=$(printf '%s' "$creds" | jq -r '.SessionToken')
+
+  echo "Loaded credentials for profile: $profile"
+}
