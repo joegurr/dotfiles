@@ -1,0 +1,20 @@
+#! /usr/bin/env make
+
+FILE_NAME=main
+
+.PHONY: all
+
+all: $(FILE_NAME)
+
+$(FILE_NAME): $(FILE_NAME).c
+	gcc -o $(FILE_NAME) $(FILE_NAME).c
+
+format: $(FILE_NAME).c
+	clang-format -i $(FILE_NAME).c
+
+lint: $(FILE_NAME).c
+	cppcheck --enable=all "$(FILE_NAME)".c
+
+clean:
+	rm $(FILE_NAME)
+

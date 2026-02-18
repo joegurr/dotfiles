@@ -1,0 +1,36 @@
+#! /usr/bin/env make
+
+.PHONY: all
+
+LATEXMK_OPTIONS=-pdf -pdflatex="pdflatex -interaction=nonstopmode" -use-make -quiet
+
+all: main.pdf
+
+lint:
+	lacheck main.tex
+
+format:
+	latexindent -w -s main.tex
+
+main.pdf: main.tex
+	latexmk $(LATEXMK_OPTIONS) main.tex
+
+show: main.pdf
+	open main.pdf &
+
+clean:
+	find . -type f \( -name "*.aux" -o -name "*.    bbl" -o -name "*.blg" -o -name "*.log" -o -name     "*.out" -o -name "*.toc" -o -name "*.fls" -o -name "*.fdb_latexmk" -o -name "*.bak*" \) -delete
+
+purge: clean
+	rm -f main.pdf
+
+proof:
+	echo "weasel words: "
+	$$HOME/bin/latex-scripts/weasel *.tex
+	echo
+	echo "passive voice: "
+	$$HOME/bin/latex-scripts/passive *.tex
+	echo
+	echo "duplicates: "
+	$$HOME/bin/latex-scripts/dups *.tex
+
