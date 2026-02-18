@@ -116,6 +116,6 @@ if command -v tmux &> /dev/null && \
   fi
 fi
 
-export PATH="/home/joe/.ebcli-virtual-env/executables:$PATH:/opt"
+export PATH="/home/joe/.ebcli-virtual-env/executables:$PATH:/opt:/home/joe/bin"
 
 export MANPAGER="sh -c 'awk '\''{ gsub(/\x1B\[[0-9;]*m/, \"\", \$0); gsub(/.\x08/, \"\", \$0); print }'\'' | batcat -p -lman'"
