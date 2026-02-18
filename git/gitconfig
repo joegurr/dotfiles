@@ -16,7 +16,7 @@
 	pager = delta
 
 [filter "nb-clean"]
-	clean = /home/joe/code/.venv/bin/nb-clean clean
+	clean = uvx nb-clean clean
 	smudge = cat
 	required = true
 
