@@ -2,28 +2,49 @@
   "extends": [
     "@commitlint/config-conventional"
   ],
+  "descriptions": {
+    "build": "Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)",
+    "chore": "Changes which don't change source code or tests e.g. changes to the build process, auxiliary tools, libraries",
+    "ci": "Changes to CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs)",
+    "config": "For changes to dotfiles",
+    "data": "Data-related changes",
+    "docs": "Documentation only changes",
+    "enh": "Enhancements to existing features",
+    "feat": "A new feature",
+    "fix": "A bug fix",
+    "notes": "For changes to notes",
+    "perf": "A code change that improves performance",
+    "refactor": "A code change that neither fixes a bug nor adds a feature",
+    "rel": "Release-related changes",
+    "revert": "Revert something",
+    "spell": "Spell check fixes",
+    "style": "Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)",
+    "test": "Adding missing tests or correcting existing tests",
+    "typo": "Fix typos"
+  },
   "rules": {
     "type-enum": [
       2,
       "always",
       [
-        "feat",
-        "fix",
-        "docs",
-        "style",
-        "refactor",
-        "perf",
-        "test",
-        "chore",
         "build",
+        "chore",
         "ci",
         "config",
-        "notes",
-        "revert",
-        "typo",
-        "rel",
+        "data",
+        "docs",
         "enh",
-        "spell"
+        "feat",
+        "fix",
+        "notes",
+        "perf",
+        "refactor",
+        "rel",
+        "revert",
+        "spell",
+        "style",
+        "test",
+        "typo"
       ]
     ],
     "scope-enum": [
@@ -35,9 +56,10 @@
         "build",
         "tests",
         "api",
-        "battery-maker"
+        "battery-maker",
+        "shared",
+        "price-projection"
       ]
     ]
   }
 }
-
