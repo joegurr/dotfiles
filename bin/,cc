@@ -1,0 +1,21 @@
+#! /usr/bin/env bash
+
+echo "###############################"
+echo "CONVENTIONAL COMMITS CHEATSHEET"
+echo "###############################"
+
+COMMITLINT_RC="${HOME}/.commitlintrc.json"
+
+if [[ ! -f "$COMMITLINT_RC" ]]; then
+    echo "Warning: $COMMITLINT_RC not found"
+    exit 1
+fi
+
+jq -r '
+  .descriptions as $descs |
+  .rules["type-enum"][2][] |
+  . as $t |
+  if $descs[$t] then "\($t): \($descs[$t])" else $t end
+' "$COMMITLINT_RC"
+
+echo "###############################"

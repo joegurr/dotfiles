@@ -1,0 +1,26 @@
+#! /usr/bin/env python
+
+import sys
+import subprocess
+import os
+
+GLOBAL_PYTHON_VENV = os.getenv("GLOBAL_PYTHON_VENV")
+
+
+def main():
+    if len(sys.argv) != 2:
+        print("Usage: ,t SESSION_NAME")
+        sys.exit(1)
+
+    session_name = sys.argv[1]
+    sessions_dir = os.path.expanduser('~/code/sessions')
+    session_file = os.path.join(sessions_dir, f'{session_name}.yaml')
+
+    if not os.path.isfile(session_file):
+        print(f"Session file '{session_file}' not found.")
+        sys.exit(1)
+
+    subprocess.run([f'{GLOBAL_PYTHON_VENV}/bin/tmuxp', 'load', session_file])
+
+if __name__ == "__main__":
+    main()

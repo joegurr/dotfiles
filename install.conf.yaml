@@ -25,3 +25,7 @@
     ~/.commitlintrc.json: git/commitlintrc.json
     # jj
     ~/.config/jj/config.toml: jj-config.toml
+    # bin
+    ~/.local/bin/,cc: bin/,cc
+    ~/.local/bin/,t: bin/,t
+    ~/.local/bin/,n: bin/,n

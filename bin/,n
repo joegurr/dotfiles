@@ -1,0 +1,52 @@
+#! /usr/bin/env python
+
+import os
+import datetime
+import argparse
+
+NOTES_DIR = os.getenv("NOTES_DIR")
+AUTHOR = "joegurr"
+EDITOR = "vim"
+
+# Parse command-line arguments
+parser = argparse.ArgumentParser(description="Open a daily note.")
+parser.add_argument(
+    "offset",
+    type=int,
+    nargs="?",
+    default=0,
+    help="Offset from the current date (positive or negative integer).",
+)
+parser.add_argument(
+    "--dir",
+    type=str,
+    required=False,
+    help="The directory you want to place this note in.",
+)
+args = parser.parse_args()
+
+# Determine the file path
+if args.dir:
+    NOTES_DIR = args.dir
+
+notes_dir = os.path.join(NOTES_DIR)
+os.makedirs(notes_dir, exist_ok=True)
+
+# Determine the date based on the offset
+today = datetime.date.today()
+date = today + datetime.timedelta(days=args.offset)
+date_str = date.strftime("%Y-%m-%d")
+
+note_file = os.path.join(notes_dir, f"{date_str}.md")
+
+# Create the note file if it doesn't exist
+if not os.path.exists(note_file):
+    with open(note_file, "w") as f:
+        f.write("---\n")
+        f.write(f"title: {date_str}\n")
+        f.write(f'created: {date.strftime("%Y-%m-%dT%H:%M:%S%z")}\n')
+        f.write(f"author: {AUTHOR}\n")
+        f.write("---\n\n")
+
+# Open the note file in the editor
+os.system(f"{EDITOR} {note_file}")
