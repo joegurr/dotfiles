@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#! /usr/bin/env python3
 
 import os
 import datetime
@@ -44,7 +44,6 @@ if not os.path.exists(note_file):
     with open(note_file, "w") as f:
         f.write("---\n")
         f.write(f"title: {date_str}\n")
-        f.write(f'created: {date.strftime("%Y-%m-%dT%H:%M:%S%z")}\n')
         f.write(f"author: {AUTHOR}\n")
         f.write("---\n\n")
 

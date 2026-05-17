@@ -41,3 +41,7 @@
 
 [url "git@github.com:"]
 	insteadOf = https://github.com/
+
+[alias]
+# https://arialdomartini.github.io/git-fixup
+	fixup = "!f() { TARGET=$(git rev-parse $1); git commit --fixup=$TARGET ${@:2} && GIT_SEQUENCE_EDITOR=true git rebase -i --autostash --autosquash $TARGET^; }; f"

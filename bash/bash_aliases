@@ -28,3 +28,4 @@ alias ruff='$GLOBAL_PYTHON_VENV/bin/ruff'
 alias nb-clean='$GLOBAL_PYTHON_VENV/bin/nb-clean'
 alias bat='batcat'
 alias eb='uvx --from awsebcli eb'
+alias ,i="NOTES_DIR=/home/joe/code/work/iaction/notes ,n"
