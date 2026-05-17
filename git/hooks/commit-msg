@@ -4,6 +4,26 @@ import sys
 import subprocess
 
 def main(commit_msg_file):
+    # Strip Co-Authored-by lines added by LLMs
+    with open(commit_msg_file, 'r+') as f:
+        lines = f.readlines()
+        llm_domains = {'anthropic.com', 'openai.com', 'githubcopilot.com'}
+        def is_llm_coauthor(line):
+            if not line.lower().startswith('co-authored-by:'):
+                return False
+            start = line.find('<')
+            end = line.find('>', start)
+            if start == -1 or end == -1:
+                return False
+            email = line[start+1:end]
+            domain = email.split('@')[-1].lower()
+            return domain in llm_domains
+        filtered = [l for l in lines if not is_llm_coauthor(l)]
+        if filtered != lines:
+            f.seek(0)
+            f.writelines(filtered)
+            f.truncate()
+
     # Ensure the commit message ends with a newline
     with open(commit_msg_file, 'r+') as f:
         f.seek(0, 2)  # Move to the end of the file
