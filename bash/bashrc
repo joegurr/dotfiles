@@ -86,6 +86,7 @@ if ! shopt -oq posix; then
 fi
 
 mkcd() { mkdir -p "$@" && cd "$@"; }
+cdtmp() { cd "$(mktemp -d "${TMPDIR:-/tmp}/${1:-tmp}-$(date +%Y-%m-%d).XXXXXX")"; }
 
 source /etc/bash_completion.d/git-prompt
 export GIT_PS1_SHOWDIRTYSTATE=1
