@@ -133,6 +133,7 @@ set foldmethod=manual
 set splitright
 set wrap
 set expandtab
+autocmd FileType make setlocal noexpandtab
 set softtabstop=4
 
 " User defined functions
