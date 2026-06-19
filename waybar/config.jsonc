@@ -1,0 +1,38 @@
+{
+    "position": "bottom",
+
+    "modules-left": ["sway/workspaces", "sway/mode"],
+    "modules-center": ["sway/window"],
+    "modules-right": ["bluetooth", "pulseaudio", "network", "battery", "clock"],
+
+    "network": {
+        "format-wifi": " {essid}",
+        "format-ethernet": " {ipaddr}",
+        "format-disconnected": "disconnected",
+        "tooltip-format-wifi": "{signalStrength}% {frequency}MHz",
+        "on-click": "nm-connection-editor"
+    },
+
+    "bluetooth": {
+        "format": " {status}",
+        "format-disabled": " off",
+        "format-off": " off",
+        "format-connected": " {device_alias}",
+        "format-connected-battery": " {device_alias} {device_battery_percentage}%",
+        "tooltip-format-connected": "{device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}",
+        "on-click": "blueman-manager"
+    },
+
+    "battery": {
+        "format": "{icon} {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-icons": ["", "", "", "", ""],
+        "tooltip-format": "{timeTo}"
+    },
+
+    "clock": {
+        "format": " {:%a %d %b  %H:%M}",
+        "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>"
+    }
+}

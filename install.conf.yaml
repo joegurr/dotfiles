@@ -4,8 +4,13 @@
     # misc
     ~/.tmux.conf: tmux.conf
     ~/.config/i3/config: i3config
+    ~/.config/sway/config: swayconfig
     ~/.markdownlintrc: markdownlint.json
     ~/.ssh/config: ssh.conf
+    ~/.config/redshift/redshift.conf: redshift.conf
+    ~/.config/gammastep/config.ini: gammastep.conf
+    ~/.config/waybar/config.jsonc: waybar/config.jsonc
+    ~/.config/foot/foot.ini: foot.ini
     # vim
     ~/.vimrc: vim/vimrc
     ~/.vim/functions.vim: vim/functions.vim
