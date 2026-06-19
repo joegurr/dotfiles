@@ -61,8 +61,11 @@ Blockchain
 Blowering
 Bolkovac
 Bourdain
+Brideson
 Brothier
+Bulow
 CAPEX
+CCM
 CDK
 CEFC
 CLIENTENV
@@ -164,6 +167,7 @@ F1
 FCAS
 FCASDEV
 FE
+FTA
 FeedforwardSecondary
 Fenchel
 Frenchies
@@ -194,12 +198,14 @@ Godel's
 Goldbach's
 Goldmund
 Gregors
+GridScout
 Guha
 Gurobi
 Gurr
 Gurr's
 Gwern
 Génie
+HECS
 HHMMSS
 HINN
 HINNs
@@ -213,6 +219,7 @@ Hawke
 Heffron
 Hesse
 Heyworth
+HiGHS
 Hickel
 Hiraide
 Hspec
@@ -220,6 +227,7 @@ Http3
 Hypersphere
 INTERCONNECTORS
 IPCC
+IRL
 IaC
 IamInstanceProfile
 IdToken
@@ -305,6 +313,7 @@ Markus
 Math
 MaxSize
 McCurdy
+McKinna
 Mckinsey
 MinSize
 Mircea
@@ -368,6 +377,7 @@ PVLITE
 Pachinko
 Pagendam
 Palast
+Pallin
 Pandera
 Pangram
 Paramancer
@@ -401,6 +411,7 @@ PutImage
 PutObject
 PyPI
 PyTorch
+Pyomo
 Q1
 Q2
 Q3
@@ -409,6 +420,7 @@ QLD
 QUIC
 Qsim
 Quadient
+Quadient's
 Quickstart
 RAISE5MIN
 RAISE60SEC
@@ -418,6 +430,7 @@ RDBMS
 RDMS
 RDSBackup
 REPLENISHABLE
+REZ
 RRP
 RUGBYR
 Raul
@@ -471,6 +484,7 @@ ServiceUnavailable
 SharedStack
 Siddhartha
 Similiarity
+Sivers
 Slacklining
 Smirnov
 StartPortForwardingSessionToRemoteHost
@@ -496,6 +510,7 @@ TORUSDEV
 TOS
 TWOHUNDREDFORTY
 TWh
+Taji
 Takashi
 Tartt
 TerminateSession
@@ -509,6 +524,7 @@ Tweety
 TwoModelTrainer
 TypeScript
 UAT
+UNSW
 UQ
 UUID
 UUIDs
@@ -548,6 +564,7 @@ Yarin
 YoY
 Zusak
 abelian
+accidently
 accum
 addopts
 adic
@@ -611,6 +628,7 @@ barh
 barmode
 baseurl
 bashrc
+basico
 batterymip
 behavior
 bfill
@@ -642,6 +660,7 @@ cloudfront
 cloudwatch
 cmap
 coc
+codebases
 codomain
 coeff
 cofactor
@@ -745,6 +764,7 @@ eprint
 equicontinuity
 equicontinuous
 errorfactory
+español
 exercism
 explaination
 explanability
@@ -797,6 +817,7 @@ githubusercontent
 gitignore
 glpk
 gnarly
+godaddy
 gp3
 gppd
 gpu
@@ -955,6 +976,7 @@ meshy
 metadatas
 metaheuristics
 metamodels
+metolius
 millis
 mingen
 minibatch
@@ -971,6 +993,7 @@ mqtt
 msecs
 msg
 mult
+muy
 myapp
 myclientid
 mymodel
@@ -978,7 +1001,9 @@ mypassword
 mypy
 mysession
 münchen
+nGAGE
 name
+namecheap
 nans
 navs
 navset
@@ -1040,6 +1065,7 @@ plotdata
 plotly
 plugin
 pointwise
+porkbun
 portNumber
 posteriorPredictiveModel
 postgres
@@ -1135,6 +1161,7 @@ scipy
 seaborn
 secretsmanager
 selectize
+serverless
 ses
 session
 sessionmaker
@@ -1205,6 +1232,7 @@ titlesize
 tmux
 tmuxp
 tod
+todo
 todos
 toml
 tqdm
@@ -1292,4 +1320,5 @@ yticks
 zcat
 zipfile
 zlabel
+zoho
 zorder
