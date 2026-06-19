@@ -59,7 +59,7 @@ nnoremap <silent> gy <Plug>(coc-type-definition)
 " `:CocInstall coc-markdownlint`
 " c
 " language server: clangd
-" `sudo apt-get install clangd-12`
+" `sudo apt-get install clangd`
 " as per <https://clangd.llvm.org/installation.html>
 " formatter: clang-format
 " `sudo apt install clang-format`
