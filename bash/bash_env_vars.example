@@ -19,7 +19,7 @@ export BLOG_TEMPLATE_FILE=/home/joe/bin/blog-template.html
 export VSCODE_SETTINGS_FILEPATH=/home/joe/.config/Code/User/settings.json
 export VIM_SPELL_FILEPATH=/home/joe/.vim/spell/en.utf-8.add
 # associated with ,s
-export THUNDERBIRD_DICT=/home/joe/.thunderbird/<profile>/persdict.dat
+export THUNDERBIRD_DICT='/home/joe/.thunderbird/<profile>/persdict.dat'
 export FZF_DEFAULT_COMMAND='rg --files --hidden --glob "!.git"'
 export BW_SESSION=""
 export MCFLY_LIGHT=""
