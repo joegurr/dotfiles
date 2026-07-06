@@ -37,3 +37,4 @@
     ~/.local/bin/,t: bin/,t
     ~/.local/bin/,n: bin/,n
     ~/.local/bin/,s: bin/,s
+    ~/.local/bin/,urlgrep: bin/,urlgrep
