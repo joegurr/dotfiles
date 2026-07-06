@@ -11,6 +11,7 @@
     ~/.config/gammastep/config.ini: gammastep.conf
     ~/.config/waybar/config.jsonc: waybar/config.jsonc
     ~/.config/foot/foot.ini: foot.ini
+    ~/.config/zathura/zathurarc: zathurarc
     # vim
     ~/.vimrc: vim/vimrc
     ~/.vim/functions.vim: vim/functions.vim
