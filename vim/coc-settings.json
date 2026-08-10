@@ -43,7 +43,12 @@
             "filetypes": [
                 "go"
             ]
-        }
+        },
+        "bash": {
+            "command": "bash-language-server",
+            "args": ["start"],
+            "filetypes": ["sh"]
+          }
     },
     "suggest": {
         "triggerCompletionWait": 1000

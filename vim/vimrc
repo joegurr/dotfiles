@@ -70,6 +70,9 @@ nnoremap <silent> gy <Plug>(coc-type-definition)
 " `go install golang.org/x/tools/gopls@latest`
 " javascript/typescript
 " `:CocInstall coc-tsserver`
+" bash
+" `npm i -g bash-language-server`
+
 
 set ts=4 sw=4
 
@@ -96,6 +99,14 @@ set backspace=indent,eol,start
 " By default, Vim doesn't let you hide a buffer (i.e. have a buffer that isn't
 " shown in any window) that has unsaved changes.
 set hidden
+
+" Keep undo history on disk so `u` still works after reopening a file in a
+" new vim process, not just within the current session.
+if !isdirectory($HOME . "/.vim/undodir")
+    call mkdir($HOME . "/.vim/undodir", "p")
+endif
+set undodir=~/.vim/undodir
+set undofile
 
 " This setting makes search case-insensitive when all characters in the string
 " being searched are lowercase. However, the search becomes case-sensitive if
@@ -163,8 +174,9 @@ set foldcolumn=1
 
 " learn vimscript the hard way
 let mapleader=','
-nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+nnoremap <leader>ev :edit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
+nnoremap <leader>et :edit ~/.tmux.conf<cr>
 
 iabbrev @@ me@joegurr.com
 iabbrev adn and
