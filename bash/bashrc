@@ -85,8 +85,9 @@ if ! shopt -oq posix; then
   fi
 fi
 
-mkcd() { mkdir -p "$@" && cd "$@"; }
-cdtmp() { cd "$(mktemp -d "${TMPDIR:-/tmp}/${1:-tmp}-$(date +%Y-%m-%d).XXXXXX")"; }
+,mkcd() { mkdir -p "$@" && cd "$@"; }
+,cdtmp() { cd "$(mktemp -d "${TMPDIR:-/tmp}/${1:-tmp}-$(date +%Y-%m-%d).XXXXXX")"; }
+,claude() { ,cdtmp "$1" && claude "${@:2}"; }
 
 source /etc/bash_completion.d/git-prompt
 export GIT_PS1_SHOWDIRTYSTATE=1
@@ -100,8 +101,6 @@ eval "$(direnv hook bash)"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-eval "$(mcfly init bash)"
 
 # inspired by https://unix.stackexchange.com/a/113768
 if command -v tmux &> /dev/null && \
@@ -134,3 +133,6 @@ load-aws-profile() {
 
   echo "Loaded credentials for profile: $profile"
 }
+. "$HOME/.cargo/env"
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
