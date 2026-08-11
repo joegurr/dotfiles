@@ -639,6 +639,7 @@ archietcutre
 arg
 args
 argv
+arialdomartini
 arn
 arrayjob
 artifacts
@@ -695,6 +696,7 @@ cext
 characterise
 chdir
 choicelist
+chrismanbrown
 claude
 cleanup
 cleanups
@@ -839,6 +841,7 @@ filter
 financialYears
 fipy
 fix
+fixup
 flake8
 flaskparser
 fontsize
@@ -853,6 +856,8 @@ fstring
 functionals
 functools
 fy
+fzf
+gammastep
 gaussian
 gb
 getattr
@@ -864,6 +869,7 @@ githooks
 github
 githubusercontent
 gitignore
+gitlab
 given
 glpk
 gnarly
@@ -913,6 +919,7 @@ incr
 indiv
 infeas
 infty
+ini
 init
 inplace
 insgihtful
@@ -939,11 +946,13 @@ iterrows
 java
 jinja
 jinja2
+jj
 joe
 joegit
 joegurr
 jsii
 json
+jsonc
 jsonify
 jti
 jumpbox
@@ -1181,6 +1190,7 @@ rds
 realised
 recieving
 redis
+redshift
 refactor
 reflectv
 refname
@@ -1273,6 +1283,7 @@ sunday
 supremum
 suptitle
 svc
+swayconfig
 swp
 synctex
 sys
@@ -1307,6 +1318,7 @@ todo
 todos
 toml
 tqdm
+ttyper
 twinx
 txt
 typeguard
@@ -1358,6 +1370,7 @@ vscode
 vtype
 w3
 wandb
+waybar
 wayland
 webargs
 wellbeing
@@ -1395,13 +1408,10 @@ youtube
 ytick
 yticks
 z5375985
+zathura
+zathurarc
 zcat
 zipfile
 zlabel
 zoho
 zorder
-fzf
-fixup
-arialdomartini
-gitlab
-chrismanbrown
