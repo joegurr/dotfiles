@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Skip an idle action (lock/dpms-off) while audio is actively playing or being
+# captured. This covers video calls and video/music playback that don't use the
+# Wayland idle-inhibit protocol (which sway already honours automatically for
+# apps like mpv/Chromium).
+
+active=0
+pactl list sink-inputs 2>/dev/null | grep -q "Corked: no" && active=1
+pactl list source-outputs 2>/dev/null | grep -q "Corked: no" && active=1
+
+if [ "$active" -eq 1 ]; then
+    exit 0
+fi
+
+exec "$@"
