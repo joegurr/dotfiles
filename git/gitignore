@@ -1,14 +1,29 @@
-mysession.yaml
+# Editors / IDEs
 .vscode
+.vim
+
+# Environment / secrets
 .envrc
-*.swp
-.env
-*Zone.Identifier
 *.envrc*
 !.envrc-check.sh
+.env*
 !.env.example
-CLAUDE.md
+
+# OS artifacts
+*.swp
+*Zone.Identifier
+
+# Drafts
 draft*
 DRAFT*
-.claude/*
 
+# Claude
+CLAUDE.md
+.claude/*
+**/.claude/settings.local.json
+
+# Python
+__pycache__/
+
+# Session files
+mysession.yaml

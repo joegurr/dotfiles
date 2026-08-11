@@ -25,14 +25,35 @@
 
 [commit]
 	gpgsign = true
+	verbose = true
+
+[rerere]
+	enabled = true
+
+[rebase]
+	autosquash = true
+	autostash = true
+
+[push]
+	autoSetupRemote = true
+
+[fetch]
+	prune = true
+	pruneTags = true
+
+[branch]
+	sort = -committerdate
+
+[help]
+	autocorrect = prompt
 
 [interactive]
 	diffFilter = delta --color-only
 
 [delta]
 	navigate = true
-	side-by-side=true
-	pager=batcat -p
+	side-by-side = true
+	pager = batcat -p
 
 [merge]
 	conflictStyle = diff3
@@ -44,5 +65,19 @@
 	insteadOf = https://github.com/
 
 [alias]
-# https://arialdomartini.github.io/git-fixup
-	fixup = "!f() { TARGET=$(git rev-parse $1); git commit --fixup=$TARGET ${@:2} && GIT_SEQUENCE_EDITOR=true git rebase -i --autostash --autosquash $TARGET^; }; f"
+	# shamelessly stolen from <https://arialdomartini.github.io/git-fixup>
+	# apparently similar to git-absorb: <https://github.com/tummychow/git-absorb>
+	fixup = "!f() { \
+		TARGET=$(git rev-parse $1); \
+		git commit --fixup=$TARGET ${@:2} && \
+		GIT_SEQUENCE_EDITOR=true git rebase -i $TARGET^; \
+	}; f"
+
+	# Browse commit history with fzf
+	# shamelessly stolen from <https://lobste.rs/s/b6fyzj/so_you_ve_installed_fzf_now_what_2023#c_cifjyj>
+	# Inspired by: <https://chrismanbrown.gitlab.io/67.html>
+	fzf = "!git log --oneline --color=always --decorate=short $@ | \
+		fzf --ansi --reverse --no-sort \
+		--preview 'git show --color=always {1}' \
+		--preview-window '<50(down)' \
+		--bind 'enter:become(git show {1})' #"
