@@ -16,6 +16,7 @@ floating_modifier $mod normal
 bindsym $mod+Return exec foot
 bindsym $mod+d exec wofi --show drun
 bindsym $mod+Shift+q kill
+bindsym $mod+Escape exec swaylock -f
 
 # Focus
 bindsym $mod+j focus left
@@ -77,6 +78,16 @@ bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -10%
 bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
 bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
+# Brightness
+bindsym XF86MonBrightnessUp exec brightnessctl set +10%
+bindsym XF86MonBrightnessDown exec brightnessctl set 10%-
+
+# Screenshot
+bindsym $mod+Shift+s exec mkdir -p ~/Pictures/Screenshots && grim -g "$(slurp)" - | tee ~/Pictures/Screenshots/$(date +%Y-%m-%d_%H-%M-%S).png | wl-copy
+
+# Screen recording (toggle: start if not running, stop if running)
+bindsym $mod+Shift+v exec pgrep -x wf-recorder && pkill -INT -x wf-recorder || (mkdir -p ~/Videos && wf-recorder -g "$(slurp)" -f ~/Videos/$(date +%Y-%m-%d_%H-%M-%S).mp4 --audio)
+
 # Sway
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
@@ -103,3 +114,11 @@ exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSO
 
 exec waybar
 exec gammastep
+exec mako
+exec lxpolkit
+
+exec swayidle -w \
+    timeout 300 '/home/joe/.local/bin/,idle-guard swaylock -f' \
+    timeout 600 '/home/joe/.local/bin/,idle-guard swaymsg "output * dpms off"' \
+         resume 'swaymsg "output * dpms on"' \
+    before-sleep 'swaylock -f'
