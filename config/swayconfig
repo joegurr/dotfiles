@@ -15,6 +15,7 @@ floating_modifier $mod normal
 # Applications
 bindsym $mod+Return exec foot
 bindsym $mod+d exec wofi --show drun
+bindsym $mod+c exec cliphist list | wofi --dmenu | cliphist decode | wl-copy
 bindsym $mod+Shift+q kill
 bindsym $mod+Escape exec swaylock -f
 
@@ -116,6 +117,8 @@ exec waybar
 exec gammastep
 exec mako
 exec lxpolkit
+exec wl-paste --type text --watch cliphist store
+exec wl-paste --type image --watch cliphist store
 
 exec swayidle -w \
     timeout 300 '/home/joe/.local/bin/,idle-guard swaylock -f' \
