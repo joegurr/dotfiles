@@ -8,6 +8,7 @@ ARN
 ARNs
 ARWF
 ASHS
+ASHS's
 AWS
 AWSBatchServiceRole
 AWSElasticBeanstalkService
@@ -590,6 +591,7 @@ WEMPriceProjectionSpecification
 WLSACCESSID
 WLSSECRET
 WNN
+WOLGAN
 WSL
 WYAH
 WYAS
@@ -597,6 +599,7 @@ Waleed
 Wellbeing
 Whistleblower
 Whistleblowers
+Winmalee
 X1
 XINU
 XPOST
@@ -772,8 +775,11 @@ div
 django
 docker
 dockerising
+docstring
 docstrings
 doctest
+dotbot
+dotbot's
 dotenv
 dotfiles
 dpage
@@ -806,6 +812,7 @@ emptyset
 enableremote
 endgameanalytics
 endswith
+entrypoint
 env
 environmentsecrets
 envrc
@@ -1276,6 +1283,8 @@ studentt
 subclassing
 subdemand
 submatrix
+submodule
+submodule's
 subpackage
 subpatterns
 subseteq
