@@ -13,7 +13,7 @@ output eDP-1 mode 2560x1440
 floating_modifier $mod normal
 
 # Applications
-bindsym $mod+Return exec foot
+bindsym $mod+Return exec alacritty
 bindsym $mod+d exec wofi --show drun
 bindsym $mod+c exec cliphist list | wofi --dmenu | cliphist decode | wl-copy
 bindsym $mod+Shift+q kill
