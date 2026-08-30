@@ -6,37 +6,28 @@ Hopefully they improve!
 
 Right now, there is configuration in this repo for the following tools:
 
-* vim
+- vim
 
-  * remember to run `:mkspell ~/.vim/spell/en.utf-8.add`
-  * test the Note command, integrate it better with ,n in bin
+  - remember to run `:mkspell ~/.vim/spell/en.utf-8.add`
+  - test the Note command, integrate it better with ,n in bin
 
-* git
+- git
 
-  * develop functionality to distribute hooks easily
+- tmux
 
-* tmux
+- bash
 
-* bash
+- python
 
-* python
+- node
 
-  * pyenv
+  - nvm
 
-  * conda
-
-  * poetry
-
-* node
-
-  * nvm
-
----
+______________________________________________________________________
 
 Some of the tools I appreciate are:
 
-* [mcfly](https://github.com/cantino/mcfly)
-* [autojump](https://github.com/wting/autojump)
-* [commitlint](https://github.com/conventional-changelog/commitlint)
-* [direnv](https://direnv.net/)
-* [nb-clean](https://pypi.org/project/nb-clean/)
+- [autojump](https://github.com/wting/autojump)
+- [commitlint](https://github.com/conventional-changelog/commitlint)
+- [direnv](https://direnv.net/)
+- [nb-clean](https://pypi.org/project/nb-clean/)
