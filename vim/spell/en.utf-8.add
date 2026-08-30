@@ -742,6 +742,7 @@ csv
 cuda
 cumsum
 cumul
+darwin
 dataclass
 dataclasses
 dataframe
@@ -788,6 +789,7 @@ drdt
 dropboxd
 droplevel
 dsdt
+dst
 dt
 dtype
 dtypes
