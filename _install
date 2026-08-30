@@ -1,0 +1,67 @@
+#!/usr/bin/env python3
+
+import argparse
+from pathlib import Path
+import sys
+from enum import Enum
+
+BASEDIR = Path(__file__).parent
+CONFIG_FILEPATH = BASEDIR / "dotfiles.conf"
+
+
+class Platform(Enum):
+    LINUX = "linux"
+    DARWIN = "darwin"
+
+
+def parse_config_file(filepath: Path) -> list[tuple[Path, Path, Platform | None]]:
+    dotfiles = []
+    with open(filepath) as f:
+        for l in f:
+            if "|" not in l:
+                continue
+            parts = [w.strip() for w in l.split("|")]
+            if len(parts) != 3:
+                sys.exit("Malformed dotfiles.conf")
+            dst, src, platform = parts
+            platform = Platform(platform) if platform else None
+            dotfiles.append((Path(dst), Path(src), platform))
+    return dotfiles
+
+
+def link(
+    dotfile: tuple[Path, Path, Platform | None], dry_run: bool, platform: Platform
+) -> bool:
+    dst, src, dotfile_platform = dotfile
+    if dotfile_platform is not None and dotfile_platform != platform:
+        return True
+    dst = dst.expanduser()
+    src = (BASEDIR / src).resolve()
+    if dst.exists():
+        # if it is a symlink to the correct place that is okay
+        if dst.is_symlink() and dst.resolve() == src:
+            return True
+        print(f"{dst} exists and is not managed by the dotfiles repo")
+        return False
+    if dry_run:
+        print(f"ln -s {src} {dst}")
+    else:
+        dst.parent.mkdir(parents=True, exist_ok=True)
+        dst.symlink_to(src)
+    return True
+
+
+def main(filepath: Path, dry_run: bool, platform: Platform) -> bool:
+    dotfiles = parse_config_file(filepath)
+    return all([link(dotfile, dry_run, platform) for dotfile in dotfiles])
+
+
+if __name__ == "__main__":
+    platform = Platform(sys.platform)
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--dry-run", action="store_true")
+    args = parser.parse_args()
+
+    ok = main(CONFIG_FILEPATH, args.dry_run, platform)
+    sys.exit(0 if ok else 1)
