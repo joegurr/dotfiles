@@ -1,0 +1,10 @@
+#!/bin/dash
+
+REAL_BREW=/opt/homebrew/bin/brew
+
+if test "$1" != "bundle"; then
+    echo "Manage installations through ~/.Brewfile" >&2
+    exit 1
+fi
+
+$REAL_BREW "$@"

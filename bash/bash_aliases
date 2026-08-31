@@ -31,3 +31,4 @@ alias bat='batcat -pp'
 alias cat='bat'
 alias eb='uvx --from awsebcli eb'
 alias ,i="NOTES_DIR=/home/joe/code/work/iaction/notes ,n"
+alias brew=",brew"
