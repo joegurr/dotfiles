@@ -21,3 +21,6 @@ blue = "#5dc5f8"
 magenta = "#feabf2"
 cyan = "#24dfc4"
 white = "#ffffff"
+
+[font]
+size=18.0
