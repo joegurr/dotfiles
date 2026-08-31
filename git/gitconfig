@@ -1,7 +1,7 @@
 [user]
 	name = Joe Gurr
 	email = me@joegurr.com
-	signingkey = /home/joe/.ssh/id_me-at-joegurr-dot-com.pub
+	signingkey = ~/.ssh/id_me-at-joegurr-dot-com.pub
 
 [init]
 	defaultBranch = main
@@ -10,8 +10,8 @@
 	ff = only
 
 [core]
-	excludesfile = /home/joe/.gitignore
-	attributesfile = /home/joe/.gitattributes
+	excludesfile = ~/.gitignore
+	attributesfile = ~/.gitattributes
 	editor = vim
 	pager = delta
 
