@@ -66,6 +66,7 @@ Blockchain
 Blowering
 Bolkovac
 Bourdain
+Brewfile
 Brideson
 Brothier
 Bulow
@@ -246,6 +247,7 @@ IRL
 IaC
 IamInstanceProfile
 IdToken
+IdentityFile
 Improv
 Initialised
 InitiateLayerUpload
@@ -426,6 +428,7 @@ Popen
 PostgreSQL
 Postgres
 Precip
+PreferredAuthentications
 Presigned
 Presolve
 PriceProjection
@@ -699,7 +702,9 @@ cext
 characterise
 chdir
 choicelist
+chore
 chrismanbrown
+ci
 claude
 cleanup
 cleanups
@@ -822,6 +827,7 @@ eprint
 equicontinuity
 equicontinuous
 errorfactory
+eslint
 español
 etc
 exercism
@@ -889,6 +895,7 @@ gpu
 gray
 grb
 gridcolor
+gridscout
 gridspec
 gunicorn
 gurobi
@@ -908,6 +915,7 @@ hlength
 horizontalalignment
 hspace
 hstack
+ht
 html5
 husl
 hydrograph
@@ -917,6 +925,7 @@ hyperspherical
 hypothesised
 i
 i3config
+iaction
 iam
 idx
 igm
@@ -1011,6 +1020,7 @@ listdir
 litera
 loadbalancer
 localPortNumber
+lockfile
 loglike
 logsumexp
 lowercase
@@ -1096,6 +1106,7 @@ normalisation
 normalv
 notna
 nper
+npm
 nrows
 numerix
 numpy
@@ -1162,6 +1173,7 @@ productionising
 psql
 psutil
 psycopg
+publickey
 pw
 py
 py's
@@ -1216,6 +1228,7 @@ reportAttributeAccessIssue
 repr
 resourceTag
 resp
+resync
 revokedtoken
 rhs
 rightarrow
@@ -1267,6 +1280,7 @@ spacelab
 splitlines
 sqlalchemy
 sqlite
+sr
 src
 ssh
 ssm
@@ -1299,6 +1313,7 @@ swp
 synctex
 sys
 t3
+tailwindcss
 tanstack
 tarsnap
 telnet
@@ -1424,5 +1439,6 @@ zathurarc
 zcat
 zipfile
 zlabel
+zod
 zoho
 zorder
