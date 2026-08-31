@@ -28,10 +28,12 @@ shopt -s checkwinsize
 #shopt -s globstar
 
 # make less more friendly for non-text input files, see lesspipe(1)
-[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
+if test -x /usr/bin/lesspipe; then
+    eval "$(SHELL=/bin/sh lesspipe)"
+fi
 
 # set variable identifying the chroot you work in (used in the prompt below)
-if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
+if test -z "${debian_chroot:-}" &&  test -r /etc/debian_chroot; then
     debian_chroot=$(cat /etc/debian_chroot)
 fi
 
@@ -45,7 +47,7 @@ esac
 # should be on the output of commands, not on the prompt
 force_color_prompt=yes
 
-if [ -n "$force_color_prompt" ]; then
+if test -n "$force_color_prompt"; then
     if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
         # We have color support; assume it's compliant with Ecma-48
         # (ISO/IEC-6429). (Lack of such support is extremely rare, and such
@@ -116,7 +118,9 @@ if command -v tmux &> /dev/null && \
   fi
 fi
 
-export PATH="/home/joe/.ebcli-virtual-env/executables:$PATH:/opt:/home/joe/bin"
+if test -d "$HOME/.ebcli-virtual-env/executables"; then
+    export PATH="$HOME/.ebcli-virtual-env/executables:$PATH"
+fi
 
 export MANPAGER="sh -c 'awk '\''{ gsub(/\x1B\[[0-9;]*m/, \"\", \$0); gsub(/.\x08/, \"\", \$0); print }'\'' | batcat -p -lman'"
 export PAGER="/usr/bin/batcat -p"
@@ -133,6 +137,9 @@ load-aws-profile() {
 
   echo "Loaded credentials for profile: $profile"
 }
-. "$HOME/.cargo/env"
+
+if [ -f "$HOME/.cargo/env" ]; then
+    . "$HOME/.cargo/env"
+fi
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
