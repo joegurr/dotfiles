@@ -4,8 +4,6 @@ import sys
 import subprocess
 import os
 
-GLOBAL_PYTHON_VENV = os.getenv("GLOBAL_PYTHON_VENV")
-
 
 def main():
     if len(sys.argv) != 2:
@@ -20,7 +18,7 @@ def main():
         print(f"Session file '{session_file}' not found.")
         sys.exit(1)
 
-    subprocess.run([f'{GLOBAL_PYTHON_VENV}/bin/tmuxp', 'load', session_file])
+    subprocess.run(['uvx', 'tmuxp', 'load', session_file])
 
 if __name__ == "__main__":
     main()

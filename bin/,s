@@ -1,10 +1,8 @@
 #!/usr/bin/python3
 
 import os
-import json
 
 VIM_SPELL_FILEPATH = os.getenv("VIM_SPELL_FILEPATH")
-VSCODE_SETTINGS_FILEPATH = os.getenv("VSCODE_SETTINGS_FILEPATH")
 THUNDERBIRD_DICT = os.getenv("THUNDERBIRD_DICT")
 
 
@@ -14,20 +12,9 @@ def read_newline_delimited_file(file_path):
     return set(words)
 
 
-def read_json_file(file_path):
-    with open(file_path, "r") as file:
-        data = json.load(file)
-    return data
-
-
 def write_newline_file(file_path, words):
     with open(file_path, "w") as file:
         file.write("\n".join(words) + "\n")
-
-
-def write_json_file(file_path, data):
-    with open(file_path, "w") as file:
-        json.dump(data, file, indent=2)
 
 
 if not VIM_SPELL_FILEPATH or not os.path.exists(VIM_SPELL_FILEPATH):
@@ -35,20 +22,12 @@ if not VIM_SPELL_FILEPATH or not os.path.exists(VIM_SPELL_FILEPATH):
 
 union_words = read_newline_delimited_file(VIM_SPELL_FILEPATH)
 
-if VSCODE_SETTINGS_FILEPATH and os.path.exists(VSCODE_SETTINGS_FILEPATH):
-    json_data = read_json_file(VSCODE_SETTINGS_FILEPATH)
-    union_words = union_words.union(json_data["cSpell.userWords"])
-
 if THUNDERBIRD_DICT and os.path.exists(THUNDERBIRD_DICT):
     union_words = union_words.union(read_newline_delimited_file(THUNDERBIRD_DICT))
 
 union_words = sorted(union_words)
 
 write_newline_file(VIM_SPELL_FILEPATH, union_words)
-
-if VSCODE_SETTINGS_FILEPATH and os.path.exists(VSCODE_SETTINGS_FILEPATH):
-    json_data["cSpell.userWords"] = list(union_words)
-    write_json_file(VSCODE_SETTINGS_FILEPATH, json_data)
 
 if THUNDERBIRD_DICT and os.path.exists(THUNDERBIRD_DICT):
     write_newline_file(THUNDERBIRD_DICT, union_words)
