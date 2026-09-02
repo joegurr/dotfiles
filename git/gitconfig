@@ -53,7 +53,6 @@
 [delta]
 	navigate = true
 	side-by-side = true
-	pager = batcat -p
 
 [merge]
 	conflictStyle = diff3
