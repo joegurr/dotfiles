@@ -1,0 +1,7 @@
+# Machine-local alacritty overrides. Copy to ~/.config/alacritty/local.toml
+# and edit; it is imported by config/alacritty.toml but never tracked here,
+# so each machine keeps its own values. Missing imports are silently skipped,
+# so machines without this file just use the shared config as-is.
+
+[font]
+size = 18.0
