@@ -15,6 +15,7 @@ brew "eza"
 brew "bat"
 brew "bash-completion@2"
 brew "git-delta"
+brew "gh"
 
 # python
 brew "uv"
