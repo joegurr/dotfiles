@@ -4,4 +4,4 @@ protocols='http|https|ftp|sftp|gemini|mailto'
 valid_chars="][a-zA-Z0-9_~/?#@!$&'()*+=.,;:-"
 regex="(($protocols):|www\.)[$valid_chars]+"
 
-egrep -o "$regex"
+grep -Eo "$regex"
