@@ -5,6 +5,7 @@
 export NOTES_DIR="$HOME/Documents/notes"
 # associated with ,s
 export VIM_SPELL_FILEPATH="$HOME/.vim/spell/en.utf-8.add"
+# the default linux path
 export THUNDERBIRD_DICT="$HOME/.thunderbird/<profile>/persdict.dat"
 export FZF_DEFAULT_COMMAND='rg --files --hidden --glob "!.git"'
 export BW_SESSION=""
