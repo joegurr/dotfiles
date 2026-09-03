@@ -1,11 +1,17 @@
-alias ls='eza'
-# enable color support of ls and also add handy aliases
-if [ -x /usr/bin/dircolors ]; then
+# dircolors sets LS_COLORS, which both ls and eza read
+if test -x /usr/bin/dircolors; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+fi
+
+# gnu grep >= 3.8 warns on the egrep/fgrep names
+alias grep='grep --color=auto'
+alias egrep='grep -E --color=auto'
+alias fgrep='grep -F --color=auto'
+
+if command -v eza > /dev/null 2>&1; then
+    alias ls='eza'
+elif test -x /usr/bin/dircolors; then
     alias ls='ls --color=auto'
-    alias grep='grep --color=auto'
-    alias fgrep='fgrep --color=auto'
-    alias egrep='egrep --color=auto'
 fi
 
 # some more ls aliases
@@ -24,9 +30,9 @@ alias ,reset='deactivate; cd ~; clear'
 
 alias ,ruff='uvx ruff'
 alias ,nb-clean='uvx nb-clean'
-if command -v bat > /dev/null 2>&1; then
-    alias cat='bat -pp'
+if test -n "$_bat"; then
+    alias cat="$_bat -pp"
 fi
 alias ,eb='uvx --from awsebcli eb'
-alias ,i="NOTES_DIR=/home/joe/code/work/iaction/notes ,n"
+alias ,i='NOTES_DIR=$HOME/code/work/iaction/notes ,n'
 alias brew=",brew"
