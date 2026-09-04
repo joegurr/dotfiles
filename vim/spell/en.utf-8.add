@@ -81,6 +81,7 @@ COMP9044
 CONNACK
 CORS
 CSIRO
+CSR
 CTRL
 CUMEC
 Cali
@@ -130,6 +131,7 @@ DURACELLDEV
 Dabrowski
 Dann
 Dantzig
+DataSource
 DeleteObject
 DeleteOnTerminate
 Denni's
@@ -290,6 +292,7 @@ LGAS
 LICENSEID
 LLM
 LMRC
+LODF
 LOWER5MIN
 LOWER60SEC
 LOWER6SEC
@@ -323,6 +326,7 @@ MLP
 MLPRegressor
 MNSP
 MSE
+MVA
 MVP
 MWh
 MYEAFU
@@ -401,6 +405,7 @@ PII
 POE
 PPQ3
 PPQ4
+PTDF
 PTN
 PTN's
 PVLITE
@@ -527,6 +532,7 @@ Similiarity
 Sivers
 Slacklining
 Smirnov
+SparseRows
 StartPortForwardingSessionToRemoteHost
 StartSSHSession
 StartSession
@@ -561,6 +567,7 @@ Thinkpad
 Tika's
 TimeLimit
 Timequake
+Timestamp
 Tipping's
 TodoWrite
 ToolStacks
@@ -584,6 +591,7 @@ VTOH
 ValueError
 VarName
 Velich's
+VeraGrid
 Vonnegut
 Vrbik
 Vue
@@ -689,6 +697,7 @@ booktitle
 boto
 botocore
 bruno
+bwd
 cartesian
 cartesianapidb
 cattrs
@@ -747,6 +756,7 @@ csv
 cuda
 cumsum
 cumul
+dP
 darwin
 dataclass
 dataclasses
@@ -799,6 +809,7 @@ dt
 dtype
 dtypes
 dups
+e9
 eb
 ec2
 ecr
@@ -814,6 +825,7 @@ elbv
 elete
 elev
 elif
+emer
 emiss
 emptyset
 enableremote
@@ -859,6 +871,7 @@ fix
 fixup
 flake8
 flaskparser
+float32
 fontsize
 fontweight
 footroom
@@ -935,6 +948,7 @@ imread
 imshow
 incr
 indiv
+indptr
 infeas
 infty
 ini
@@ -942,6 +956,7 @@ init
 inplace
 insgihtful
 int
+int32
 inten
 intens
 intepretation
@@ -994,6 +1009,8 @@ laravel
 latexindent
 latexmk
 launchconfiguration
+ldsh
+len
 leq
 levelname
 libarrow
@@ -1107,6 +1124,7 @@ normalv
 notna
 nper
 npm
+npy
 nrows
 numerix
 numpy
@@ -1330,12 +1348,14 @@ texlab
 textbf
 textfont
 th
+thresholded
 tickangle
 tickcolor
 tickmode
 ticktext
 tickvals
 timedelta
+timestamp
 titlesize
 tmux
 tmuxp
