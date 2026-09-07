@@ -2,6 +2,8 @@ A4
 AAAS
 AEMC
 AEMO
+AEMO's
+AEST
 ANOVA
 APSIM
 ARN
@@ -112,8 +114,10 @@ CommandResult
 CompleteLayerUpload
 ConfigurationSet
 Constr
+ContextRef
 ConvexHull
 Cordelia
+CorridorResult
 CreateDBSnapshot
 CreateInvalidation
 Cristo
@@ -132,6 +136,10 @@ Dabrowski
 Dann
 Dantzig
 DataSource
+DcPowerFlowEvaluateRequest
+DcPowerFlowModelInput
+DcPowerFlowModelOutput
+DcPowerFlowUserInput
 DeleteObject
 DeleteOnTerminate
 Denni's
@@ -187,6 +195,7 @@ FE
 FTA
 FeedforwardSecondary
 Fenchel
+Float32Block
 Frenchies
 Frontend
 GANs
@@ -257,6 +266,7 @@ Inkscape
 InstanceId
 InstancePort
 InstanceTypes
+Int32Block
 Interconnector
 Ishiguro
 Isuru
@@ -334,6 +344,7 @@ Macquarie
 Maddys
 Mads
 Mareike
+MarketDay
 Markovian
 Markus
 Math
@@ -367,6 +378,7 @@ NNSW
 NNs
 NPKET
 NSW
+NSW1
 NUM
 Nadg's
 Nagel
@@ -374,6 +386,7 @@ Narada
 Nat's
 Navin
 Navin's
+NetworkTableTable
 Neumann
 NeurIPS
 Neurosexism
@@ -395,6 +408,7 @@ OSX
 Omara's
 Onboarding
 Ostrowski's
+OutagesTableTable
 OutputContract
 OutputFlag
 P's
@@ -405,6 +419,7 @@ PII
 POE
 PPQ3
 PPQ4
+PSS
 PTDF
 PTN
 PTN's
@@ -418,8 +433,10 @@ Pangram
 Paramancer
 ParameterSpec
 Parry's
+PartialWindow
 Pascoe
 Peppernell
+PeriodAxis
 Petros
 Phaedrus
 Pieman
@@ -456,6 +473,7 @@ Q2
 Q3
 Q4
 QLD
+QLD1
 QUIC
 Qsim
 Quadient
@@ -470,6 +488,7 @@ RDMS
 RDSBackup
 REPLENISHABLE
 REZ
+RRN
 RRP
 RUGBYR
 RangeAddress
@@ -479,6 +498,7 @@ Rayna
 Redpoint
 Refactorings
 Reimagining
+ResolvedBalancing
 ResumeSession
 RetentionInDays
 Riesz
@@ -494,6 +514,7 @@ Roxy's
 Rubiks
 Runoff
 S4
+SA1
 SASS
 SC2016
 SCSS
@@ -530,6 +551,7 @@ SharedStack
 Siddhartha
 Similiarity
 Sivers
+SlackAllocation
 Slacklining
 Smirnov
 SparseRows
@@ -550,6 +572,8 @@ SystemType
 T00
 T2
 TAS
+TAS1
+TBC
 TIMESTAMP
 TODO
 TODOs
@@ -574,6 +598,7 @@ ToolStacks
 Tweety
 TwoModelTrainer
 TypeScript
+U's
 UAT
 UNSW
 UQ
@@ -584,6 +609,7 @@ Useability
 VAE
 VAEs
 VCPU
+VIC1
 VPC
 VPCId
 VPP
@@ -607,6 +633,8 @@ WSL
 WYAH
 WYAS
 Waleed
+WebFetch
+WebSearch
 Wellbeing
 Whistleblower
 Whistleblowers
@@ -618,9 +646,11 @@ YYYY
 Yarin
 YoY
 Zusak
+a's
 abelian
 accidently
 accum
+additionalProperties
 addopts
 adic
 adics
@@ -684,6 +714,7 @@ backpropogation
 bargap
 barh
 barmode
+base64
 baseurl
 bashrc
 basico
@@ -691,15 +722,22 @@ batterymip
 behavior
 bfill
 binarisation
+bindingConstraintId
 bnnPostPredTxInput
 boldsymbol
 booktitle
 boto
 botocore
+brotli
+brotlicffi
 bruno
+busNumber
 bwd
+candidatesWithoutBaseFlow
+capacityMW
 cartesian
 cartesianapidb
+caseId
 cattrs
 cd
 cdk
@@ -714,6 +752,7 @@ choicelist
 chore
 chrismanbrown
 ci
+ckt
 claude
 cleanup
 cleanups
@@ -743,12 +782,16 @@ conf
 config
 configs
 conftest
+const
 constrname
 constrs
+contentEncoding
+contingencyIndex
 contrib
 contrsuctor
 coolwarm
 cooridnate
+corridorId
 cp
 cpython
 crossref
@@ -770,6 +813,9 @@ datetime
 dateutil
 dayfirst
 db
+dc
+dd
+debuggable
 dedt
 defaultdict
 defn
@@ -786,6 +832,7 @@ didt
 digit
 direnv
 dispatchmodel
+displayKey
 distr
 div
 django
@@ -808,7 +855,12 @@ dst
 dt
 dtype
 dtypes
+duid
+duids
 dups
+durationHours
+dynamodb
+e4
 e9
 eb
 ec2
@@ -822,6 +874,8 @@ elasticbeanstalk
 elasticloadbalancingv
 elb
 elbv
+elementPeriodsOnOutage
+elementPeriodsWithoutRating
 elete
 elev
 elif
@@ -832,6 +886,7 @@ enableremote
 endgameanalytics
 endswith
 entrypoint
+enum
 env
 environmentsecrets
 envrc
@@ -842,10 +897,13 @@ errorfactory
 eslint
 español
 etc
+exclusiveMaximum
+exclusiveMinimum
 exercism
 exitcodes
 explaination
 explanability
+exportLimitMw
 expressivity
 eyev
 facecolor
@@ -872,6 +930,7 @@ fixup
 flake8
 flaskparser
 float32
+flowMw
 fontsize
 fontweight
 footroom
@@ -879,6 +938,7 @@ forcings
 forwardable
 frequentist
 froggies
+fromBus
 frontend
 fstring
 functionals
@@ -907,6 +967,7 @@ gppd
 gpu
 gray
 grb
+grep
 gridcolor
 gridscout
 gridspec
@@ -918,6 +979,7 @@ hadamard
 hardcoded
 hasattr
 hashpw
+headroomMw
 healthcheck
 healthreporting
 heatrate
@@ -925,6 +987,7 @@ hh
 highspy
 hilo
 hlength
+homebrew
 horizontalalignment
 hspace
 hstack
@@ -944,8 +1007,10 @@ idx
 igm
 ilike
 iloc
+importLimitMw
 imread
 imshow
+in's
 incr
 indiv
 indptr
@@ -953,6 +1018,7 @@ infeas
 infty
 ini
 init
+inline
 inplace
 insgihtful
 int
@@ -1038,6 +1104,7 @@ litera
 loadbalancer
 localPortNumber
 lockfile
+lodfThreshold
 loglike
 logsumexp
 lowercase
@@ -1045,6 +1112,7 @@ lp
 macOS
 mako
 mancer
+manifest's
 manifoldsequel
 markdownlint
 markdownlintrc
@@ -1059,13 +1127,17 @@ mathcal
 mathjax
 mathy
 matplotlib
+matricesManifest
 max
+maxItems
+maxLength
 maxs
 maxv
 mcfly
 md
 mdates
 meetups
+memcpy
 memit
 mesg
 meshgrid
@@ -1075,13 +1147,17 @@ metaheuristics
 metamodels
 metolius
 millis
+minItems
+minLength
 mingen
 minibatch
 minmax
 minorants
 mkspell
 mlflow
+modelVersion
 monday
+monitoredElements
 monomorphisms
 more
 mpimg
@@ -1091,6 +1167,7 @@ msecs
 msg
 mult
 muy
+mw
 myapp
 myclientid
 mymodel
@@ -1124,8 +1201,10 @@ normalv
 notna
 nper
 npm
+npx
 npy
 nrows
+null
 numerix
 numpy
 nunique
@@ -1135,6 +1214,8 @@ objs
 odeint
 oicd
 oids
+ok
+oneOf
 openpyxl
 optim
 optimisation
@@ -1143,6 +1224,7 @@ organisation
 os
 outerjoin
 overline
+p99
 paho
 pandera
 pandoc
@@ -1151,6 +1233,7 @@ paramancer
 parameterise
 parameterize
 paramètres
+parentBranch
 pathspec
 pdflatex
 pdfpagemode
@@ -1158,6 +1241,7 @@ pem
 pep8
 perc
 pgadmin
+pk
 platformdirs
 plexos
 plotdata
@@ -1230,6 +1314,7 @@ realised
 recieving
 redis
 redshift
+ref'd
 refactor
 reflectv
 refname
@@ -1238,6 +1323,7 @@ refs
 refyear
 regex
 relu
+renderable
 renewables
 reparameterised
 repn
@@ -1258,11 +1344,13 @@ rundispatchmodels
 runmanifold
 runplanningmodel
 s3
+s3api
 sKENS
 saddlebrown
 samp
 satisficing
 savetxt
+schemaVersion
 scikit
 scipy
 seaborn
@@ -1270,6 +1358,7 @@ secretsmanager
 sed
 sedlite
 selectize
+sensitivityId
 serverless
 ses
 session
@@ -1286,6 +1375,7 @@ shinywidgets
 showgrid
 showlegend
 silu
+sk
 skipna
 skiprows
 sklearn
@@ -1295,6 +1385,8 @@ soc
 soln
 southeast
 spacelab
+spec
+specs
 splitlines
 sqlalchemy
 sqlite
@@ -1302,6 +1394,7 @@ sr
 src
 ssh
 ssm
+sso
 stackoverflow
 standalone
 statsig
@@ -1355,15 +1448,19 @@ tickmode
 ticktext
 tickvals
 timedelta
+timeseries
 timestamp
 titlesize
 tmux
 tmuxp
+toBus
 tod
 todo
 todos
 toml
 tqdm
+tr
+traceId
 ttyper
 twinx
 txt
@@ -1372,19 +1469,23 @@ typer
 u
 uat
 udemy
+un
 understadning
 unescaped
 unescapes
 unflatten
 unicode
 uninterpretable
+unitId
 unretired
 unserved
 unsqueeze
 unsw
+unthresholded
 url
 urlgrep
 usecols
+userInput
 usetex
 usr
 utc
@@ -1393,6 +1494,8 @@ utils
 uuid
 uv
 v1
+v1's
+v2
 v3
 v4
 vCPU
@@ -1453,6 +1556,7 @@ yml
 youtube
 ytick
 yticks
+yyyy
 z5375985
 zathura
 zathurarc
