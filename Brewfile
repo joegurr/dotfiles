@@ -22,7 +22,6 @@ brew "uv"
 
 # node
 brew "nvm"
-brew "node"
 
 # casks (macOS GUI apps)
 cask "nikitabobko/tap/aerospace"
