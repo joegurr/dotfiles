@@ -67,6 +67,7 @@ Bhattacharya
 Blockchain
 Blowering
 Bolkovac
+Bourbaki
 Bourdain
 Brewfile
 Brideson
@@ -82,6 +83,7 @@ CNAME
 COMP9044
 CONNACK
 CORS
+CPCCOHS1001A
 CSIRO
 CSR
 CTRL
@@ -116,6 +118,7 @@ ConfigurationSet
 Constr
 ContextRef
 ConvexHull
+Coons
 Cordelia
 CorridorResult
 CreateDBSnapshot
@@ -182,6 +185,7 @@ ElastiCache
 Eleonore
 EmailType
 EndgameAnalyticsIdentity
+Endling
 Eraring
 Evap
 Evaristo
@@ -196,6 +200,7 @@ FTA
 FeedforwardSecondary
 Fenchel
 Float32Block
+Francesc
 Frenchies
 Frontend
 GANs
@@ -204,6 +209,7 @@ GMC
 GPLv3
 GR4J
 GWH
+García
 Gastro
 Gaussians
 Geemi
@@ -236,6 +242,7 @@ HECS
 HHMMSS
 HINN
 HINNs
+HLTAID
 HMC
 HOC
 Haddon
@@ -249,9 +256,11 @@ Heyworth
 HiGHS
 Hickel
 Hiraide
+Honneybee
 Hspec
 Http3
 Hypersphere
+Héctor
 INTERCONNECTORS
 IPCC
 IRL
@@ -259,6 +268,7 @@ IaC
 IamInstanceProfile
 IdToken
 IdentityFile
+Ikigai
 Improv
 Initialised
 InitiateLayerUpload
@@ -267,6 +277,7 @@ InstanceId
 InstancePort
 InstanceTypes
 Int32Block
+InterAction
 Interconnector
 Ishiguro
 Isuru
@@ -294,6 +305,7 @@ Ketan
 Kha
 Kiureghian
 Klara
+KnockoutJS
 Korina
 Krantz
 Kubernetes
@@ -309,6 +321,7 @@ LOWER6SEC
 LOWERREG
 LRMC
 LTS
+LaTeXTemplates
 Laravel
 LastLineAddress
 Lenovo
@@ -327,6 +340,9 @@ LoadBalancerHTTPPort
 LoadBalancerHTTPSPort
 LogToConsole
 MANOVA
+MATH1002
+MATH1110
+MATH1120
 MC
 MCMC
 MINLP
@@ -343,10 +359,12 @@ MYEAFU
 Macquarie
 Maddys
 Mads
+Mailhouse
 Mareike
 MarketDay
 Markovian
 Markus
+Mashaal
 Math
 MaxSize
 McCurdy
@@ -354,6 +372,7 @@ McKinna
 Mckinsey
 Meryl's
 MinSize
+Miralles
 Mircea
 MiscModelSpecification
 ModelMetadata
@@ -501,8 +520,10 @@ Reimagining
 ResolvedBalancing
 ResumeSession
 RetentionInDays
+Reva
 Riesz
 Rigby's
+Rishi
 Rogaining
 Rokker
 Ronson
@@ -524,6 +545,8 @@ SES
 SGD
 SICP
 SLURM
+SMSF
+SMSFs
 SOC
 SPSS
 SQLAlchemy
@@ -549,6 +572,7 @@ ServiceRole
 ServiceUnavailable
 SharedStack
 Siddhartha
+Silvey
 Similiarity
 Sivers
 SlackAllocation
@@ -558,8 +582,10 @@ SparseRows
 StartPortForwardingSessionToRemoteHost
 StartSSHSession
 StartSession
+Startup
 Steph
 Steren
+Stern's
 StreamLogs
 Strelecky
 StringEquals
@@ -567,6 +593,7 @@ StringLike
 Sublocales
 SubmitJob
 Supabase
+SwitchDin
 Symfony
 SystemType
 T00
@@ -623,6 +650,7 @@ Vrbik
 Vue
 W18
 WACC
+WAM
 WEM
 WEMPriceProjectionSpecification
 WLSACCESSID
@@ -759,6 +787,7 @@ cleanups
 cli
 cloudfront
 cloudwatch
+cls
 cmap
 coc
 codebases
@@ -1437,6 +1466,7 @@ test8
 testpaths
 testplot
 tetris
+tex
 texlab
 textbf
 textfont
