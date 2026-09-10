@@ -188,4 +188,28 @@ if [ -f "$HOME/.cargo/env" ]; then
     . "$HOME/.cargo/env"
 fi
 
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+if [ -d "$HOME/.fzf/bin" ]; then
+    case ":$PATH:" in
+        *":$HOME/.fzf/bin:"*) ;;
+        *) PATH="$HOME/.fzf/bin:$PATH" ;;
+    esac
+fi
+
+if command -v fzf >/dev/null 2>&1; then
+    if _fzf_hook=$(fzf --bash 2>/dev/null); then
+        # fzf >= 0.48 generates its own shell hook
+        eval "$_fzf_hook"
+    elif [ -f ~/.fzf.bash ]; then
+        # older git install: file written by ~/.fzf/install
+        . ~/.fzf.bash
+    else
+        # older distro package: source whatever it dropped on disk
+        for _fzf_dir in /usr/share/fzf /usr/share/fzf/shell \
+                        /usr/share/doc/fzf/examples; do
+            [ -f "$_fzf_dir/key-bindings.bash" ] && . "$_fzf_dir/key-bindings.bash"
+            [ -f "$_fzf_dir/completion.bash" ] && . "$_fzf_dir/completion.bash"
+        done
+        unset _fzf_dir
+    fi
+    unset _fzf_hook
+fi
