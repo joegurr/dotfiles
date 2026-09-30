@@ -27,15 +27,31 @@ done < <(find "$HOME/code" -maxdepth 3 -type d -name '.drafts' 2>/dev/null | sor
 
 moved=0
 skipped=0
+blocked=0
 
 for source in "${sources[@]}"; do
     [[ -d "$source" ]] || continue
+
+    # Desktop and Downloads are TCC-protected, and a launchd-spawned bash is
+    # not the same responsible process as your terminal. The glob below turns
+    # the resulting EPERM into an empty list, so without this check a blocked
+    # sweep looks exactly like a clean one.
+    if ! ls -A "$source" >/dev/null 2>&1; then
+        printf 'cannot read %s -- grant Full Disk Access, then it will retry\n' \
+            "$source" >&2
+        blocked=$((blocked + 1))
+        continue
+    fi
 
     destination="$archive_root/$today/${source#"$HOME"/}"
 
     shopt -s dotglob nullglob
     entries=("$source"/*)
     shopt -u dotglob nullglob
+
+    # launchd runs this under /bin/bash 3.2, where expanding an empty array
+    # with set -u is a fatal error rather than an empty list.
+    ((${#entries[@]})) || continue
 
     for entry in "${entries[@]}"; do
         name="$(basename "$entry")"
@@ -68,6 +84,14 @@ for source in "${sources[@]}"; do
         fi
     done
 done
+
+# Deliberately not recorded as a run: leaving the stamp unset means the next
+# login retries instead of declaring the day done on a partial sweep.
+if ((blocked > 0)); then
+    printf '%s: moved %d, skipped %d, BLOCKED %d\n' \
+        "$today" "$moved" "$skipped" "$blocked"
+    exit 1
+fi
 
 mkdir -p "$(dirname "$state_file")"
 printf '%s\n' "$today" >"$state_file"

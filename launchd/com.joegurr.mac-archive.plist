@@ -5,10 +5,18 @@
     <key>Label</key>
     <string>com.joegurr.mac-archive</string>
 
-    <!-- launchd does not expand ~, so this path is absolute and assumes the
-         login name is joegurr. -->
+    <!-- launchd does not expand ~, so these paths are absolute and assume the
+         login name is joegurr.
+
+         /bin/bash is named explicitly rather than letting the script's
+         "#!/usr/bin/env bash" shebang pick it: TCC attributes Full Disk Access
+         to the exec'd binary, which under a shebang is /usr/bin/env, not bash.
+         Granting access to /bin/bash only takes effect if /bin/bash is what
+         launchd actually execs. It also pins the interpreter, instead of
+         resolving it against launchd's minimal PATH. -->
     <key>ProgramArguments</key>
     <array>
+        <string>/bin/bash</string>
         <string>/Users/joegurr/.local/bin/mac-archive</string>
     </array>
 

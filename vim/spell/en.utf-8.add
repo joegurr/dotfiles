@@ -324,6 +324,7 @@ LTS
 LaTeXTemplates
 Laravel
 LastLineAddress
+LaunchAgents
 Lenovo
 LinearRegressor
 ListBucket
@@ -688,6 +689,7 @@ agtech
 ai
 aiohttp
 aircrafts
+alacritty
 aleatoric
 allowlist
 amazonaws
@@ -1090,6 +1092,7 @@ jupyterlab
 jwt
 kaiming
 kaleido
+karabiner
 kdeplot
 kiwisolver
 kwargs
@@ -1104,6 +1107,7 @@ laravel
 latexindent
 latexmk
 launchconfiguration
+launchd
 ldsh
 len
 leq
@@ -1273,6 +1277,7 @@ pgadmin
 pk
 platformdirs
 plexos
+plist
 plotdata
 plotly
 plugin

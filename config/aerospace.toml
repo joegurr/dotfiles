@@ -35,15 +35,12 @@ gaps.outer.bottom = 4
 gaps.outer.top = 4
 gaps.outer.right = 4
 
-# Finder implements each tab as its own accessibility window, so AeroSpace tiles
-# a three-tab window as three nodes and the one real window ends up in a quarter
-# of the screen (bin/mac-cleanup.sh opens exactly that). Floating Finder is the
-# only way to keep its tabs usable until AeroSpace learns to skip tab windows.
-# TESTING 2026-09-30: floating disabled to see how the merged tab window tiles.
-# [[on-window-detected]]
-#     if.app-id = 'com.apple.finder'
-#     run = 'layout floating'
-
+# There is deliberately no on-window-detected rule for Finder. AeroSpace 0.21
+# counts each Finder tab as its own window, so a window with three tabs tiles as
+# three nodes and the one real window is squeezed into a quarter of the screen.
+# Floating Finder hides that but gives up tiling, so the rule of thumb is to
+# avoid Finder tabs here: open a window per folder and let them tile honestly,
+# then ctrl-alt-w to stack them if you want tab-like behaviour.
 [mode.main.binding]
     # Applications
     ctrl-alt-enter = 'exec-and-forget open -na Alacritty'

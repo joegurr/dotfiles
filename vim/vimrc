@@ -9,12 +9,12 @@ Plug 'takac/vim-hardtime'
 
 Plug 'morhetz/gruvbox'
 
-Plug 'neoclide/coc.nvim'
+" Pinned: the last release that works on vim-classic (8.x). Newer coc.nvim is
+" written in vim9script and needs vim >= 9.0.0438. Ships a prebuilt build/index.js.
+Plug 'neoclide/coc.nvim', {'tag': 'v0.0.81'}
 
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
-" Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-" Plug 'junegunn/fzf.vim'
 
 call plug#end()
 " :PlugInstall
@@ -40,12 +40,14 @@ augroup gruvbox
 augroup END
 
 " coc
+" See vim/coc-node-shim.js for why the node side needs a --require shim.
+let g:coc_node_args = ['--no-warnings', '--require', expand('~/.vim/coc-node-shim.js')]
+
 nnoremap <silent> gd <Plug>(coc-definition)
 nnoremap <silent> gr <Plug>(coc-references)
 nnoremap <silent> gi <Plug>(coc-implementation)
 nnoremap <silent> gy <Plug>(coc-type-definition)
 
-" You might need to run `cd ~/.vim/plugged/coc.nvim; npm ci`
 " If you'd like to install a language server use this to find the right way to
 " configure it: <https://github.com/neoclide/coc.nvim/wiki/Language-servers>
 " python
