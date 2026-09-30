@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.joegurr.mac-archive</string>
+
+    <!-- launchd does not expand ~, so this path is absolute and assumes the
+         login name is joegurr. -->
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/joegurr/.local/bin/mac-archive</string>
+    </array>
+
+    <!-- At login. The script's own once-a-day guard stops repeated reboots
+         from sweeping repeatedly. -->
+    <key>RunAtLoad</key>
+    <true/>
+
+    <key>StandardOutPath</key>
+    <string>/Users/joegurr/Library/Logs/mac-archive.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/joegurr/Library/Logs/mac-archive.log</string>
+</dict>
+</plist>

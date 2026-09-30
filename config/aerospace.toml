@@ -1,0 +1,116 @@
+# Mac counterpart to config/swayconfig. Keep the two in sync.
+#
+# Karabiner (config/karabiner.json) rewrites cmd+<key> to ctrl+alt+<key> before
+# AeroSpace sees it, so the physical key pressed here is the one left of space --
+# Super on Linux, Cmd on mac, provided the Keychron stays in Windows mode.
+# The indirection keeps AeroSpace off cmd+c/w/f/r, which the ctrl->cmd rule emits.
+#
+# Per-machine setup that is NOT tracked here, because Karabiner rewrites
+# ~/.config/karabiner/karabiner.json constantly: enable the rules in Karabiner's
+# GUI, and tick any keyboard that is a combined keyboard+pointing device (the
+# Keychron receiver is one) -- Karabiner ignores those by default and the
+# bindings will silently do nothing on that keyboard alone.
+
+config-version = 2
+
+after-startup-command = []
+start-at-login = true
+enable-normalization-flatten-containers = true
+enable-normalization-opposite-orientation-for-nested-containers = true
+accordion-padding = 30
+default-root-container-layout = 'tiles'
+default-root-container-orientation = 'auto'
+key-mapping.preset = 'qwerty'
+
+# cmd+h is macOS "Hide Application", and sway muscle memory ($mod+h = split) will
+# hit it. Karabiner swallows cmd+h, but an app hidden any other way still drops
+# out of the tiling tree and looks lost, so pull it back automatically.
+automatically-unhide-macos-hidden-apps = true
+
+# Sway draws a 2px border; macOS gives us no border, so a small gap stands in.
+gaps.inner.horizontal = 4
+gaps.inner.vertical = 4
+gaps.outer.left = 4
+gaps.outer.bottom = 4
+gaps.outer.top = 4
+gaps.outer.right = 4
+
+# Finder implements each tab as its own accessibility window, so AeroSpace tiles
+# a three-tab window as three nodes and the one real window ends up in a quarter
+# of the screen (bin/mac-cleanup.sh opens exactly that). Floating Finder is the
+# only way to keep its tabs usable until AeroSpace learns to skip tab windows.
+# TESTING 2026-09-30: floating disabled to see how the merged tab window tiles.
+# [[on-window-detected]]
+#     if.app-id = 'com.apple.finder'
+#     run = 'layout floating'
+
+[mode.main.binding]
+    # Applications
+    ctrl-alt-enter = 'exec-and-forget open -na Alacritty'
+    ctrl-alt-shift-q = 'close'
+
+    # Focus
+    ctrl-alt-j = 'focus left'
+    ctrl-alt-k = 'focus down'
+    ctrl-alt-l = 'focus up'
+    ctrl-alt-semicolon = 'focus right'
+    ctrl-alt-left = 'focus left'
+    ctrl-alt-down = 'focus down'
+    ctrl-alt-up = 'focus up'
+    ctrl-alt-right = 'focus right'
+
+    # Move
+    ctrl-alt-shift-j = 'move left'
+    ctrl-alt-shift-k = 'move down'
+    ctrl-alt-shift-l = 'move up'
+    ctrl-alt-shift-semicolon = 'move right'
+    ctrl-alt-shift-left = 'move left'
+    ctrl-alt-shift-down = 'move down'
+    ctrl-alt-shift-up = 'move up'
+    ctrl-alt-shift-right = 'move right'
+
+    # Layout. AeroSpace has no manual split containers, so sway's $mod+h/$mod+v
+    # have no equivalent; $mod+e toggles the split orientation instead.
+    ctrl-alt-f = 'fullscreen'
+    ctrl-alt-w = 'layout accordion horizontal vertical'
+    ctrl-alt-e = 'layout tiles horizontal vertical'
+    ctrl-alt-shift-space = 'layout floating tiling'
+
+    # Workspaces
+    ctrl-alt-1 = 'workspace 1'
+    ctrl-alt-2 = 'workspace 2'
+    ctrl-alt-3 = 'workspace 3'
+    ctrl-alt-4 = 'workspace 4'
+    ctrl-alt-5 = 'workspace 5'
+    ctrl-alt-6 = 'workspace 6'
+    ctrl-alt-7 = 'workspace 7'
+    ctrl-alt-8 = 'workspace 8'
+    ctrl-alt-9 = 'workspace 9'
+    ctrl-alt-0 = 'workspace 10'
+
+    ctrl-alt-shift-1 = 'move-node-to-workspace 1'
+    ctrl-alt-shift-2 = 'move-node-to-workspace 2'
+    ctrl-alt-shift-3 = 'move-node-to-workspace 3'
+    ctrl-alt-shift-4 = 'move-node-to-workspace 4'
+    ctrl-alt-shift-5 = 'move-node-to-workspace 5'
+    ctrl-alt-shift-6 = 'move-node-to-workspace 6'
+    ctrl-alt-shift-7 = 'move-node-to-workspace 7'
+    ctrl-alt-shift-8 = 'move-node-to-workspace 8'
+    ctrl-alt-shift-9 = 'move-node-to-workspace 9'
+    ctrl-alt-shift-0 = 'move-node-to-workspace 10'
+
+    # AeroSpace
+    ctrl-alt-shift-c = 'reload-config'
+    ctrl-alt-r = 'mode resize'
+
+[mode.resize.binding]
+    j = 'resize width -50'
+    k = 'resize height +50'
+    l = 'resize height -50'
+    semicolon = 'resize width +50'
+    left = 'resize width -50'
+    down = 'resize height +50'
+    up = 'resize height -50'
+    right = 'resize width +50'
+    enter = 'mode main'
+    esc = 'mode main'

@@ -26,9 +26,9 @@ brew "nvm"
 
 # casks (macOS GUI apps)
 cask "nikitabobko/tap/aerospace"
+cask "karabiner-elements"
 cask "maccy"
 cask "thunderbird"
 cask "claude-code"
 cask "docker-desktop"
 cask "1password-cli"
-cask "amethyst"

@@ -1,0 +1,79 @@
+#!/usr/bin/env bash
+#
+# Sweep the clutter folders into ~/Archive/<today>/<path relative to $HOME>/.
+#
+# Runs at login via ~/Library/LaunchAgents/com.joegurr.mac-archive.plist, and
+# no-ops once it has run today, so rebooting three times does not sweep three
+# times -- and files put on the Desktop after the morning sweep stay put until
+# tomorrow.
+
+set -euo pipefail
+
+archive_root="$HOME/Archive"
+state_file="$HOME/.local/state/mac-archive/last-run"
+today="$(date +%Y-%m-%d)"
+
+if [[ -r "$state_file" && "$(cat "$state_file")" == "$today" ]]; then
+    exit 0
+fi
+
+sources=("$HOME/Desktop" "$HOME/Downloads")
+
+# Picked up rather than hardcoded so new worktrees are swept without editing
+# this list.
+while IFS= read -r drafts_dir; do
+    sources+=("$drafts_dir")
+done < <(find "$HOME/code" -maxdepth 3 -type d -name '.drafts' 2>/dev/null | sort)
+
+moved=0
+skipped=0
+
+for source in "${sources[@]}"; do
+    [[ -d "$source" ]] || continue
+
+    destination="$archive_root/$today/${source#"$HOME"/}"
+
+    shopt -s dotglob nullglob
+    entries=("$source"/*)
+    shopt -u dotglob nullglob
+
+    for entry in "${entries[@]}"; do
+        name="$(basename "$entry")"
+
+        case "$name" in
+            # Moving a download in flight breaks it, and the Finder metadata
+            # files just come back.
+            *.crdownload | *.part | *.partial | *.download | .DS_Store | .localized)
+                skipped=$((skipped + 1))
+                continue
+                ;;
+        esac
+
+        mkdir -p "$destination"
+
+        # Two folders can hold the same filename, and a same-day second sweep
+        # can collide with the first.
+        target="$destination/$name"
+        attempt=2
+        while [[ -e "$target" ]]; do
+            target="$destination/$name ($attempt)"
+            attempt=$((attempt + 1))
+        done
+
+        if mv "$entry" "$target"; then
+            moved=$((moved + 1))
+        else
+            # A locked or in-use file should not abort the whole sweep.
+            skipped=$((skipped + 1))
+        fi
+    done
+done
+
+mkdir -p "$(dirname "$state_file")"
+printf '%s\n' "$today" >"$state_file"
+
+printf '%s: moved %d, skipped %d\n' "$today" "$moved" "$skipped"
+
+if ((moved > 0)); then
+    osascript -e "display notification \"Moved $moved items into ~/Archive/$today\" with title \"Mac Archive\"" || true
+fi

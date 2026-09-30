@@ -1,0 +1,48 @@
+#!/bin/sh
+# Play a short alert sound, for use as the terminal bell
+
+set -u
+
+sound=${PING_SOUND:-}
+volume=${PING_VOLUME:-0.4}
+
+# macOS
+if command -v afplay >/dev/null 2>&1; then
+    [ -n "$sound" ] || sound=/System/Library/Sounds/Ping.aiff
+    [ -r "$sound" ] || exit 0
+    exec afplay -v "$volume" "$sound"
+fi
+
+# linux
+if [ -z "$sound" ]; then
+    for candidate in \
+        /usr/share/sounds/freedesktop/stereo/message.oga \
+        /usr/share/sounds/freedesktop/stereo/bell.oga \
+        /usr/share/sounds/sound-icons/percussion-12.wav
+    do
+        if [ -r "$candidate" ]; then
+            sound=$candidate
+            break
+        fi
+    done
+fi
+
+if [ -n "$sound" ]; then
+    # aplay is wav-only, the others handle ogg
+    case $sound in
+        *.wav) players="pw-play paplay aplay" ;;
+        *)     players="pw-play paplay ogg123" ;;
+    esac
+    for player in $players; do
+        if command -v "$player" >/dev/null 2>&1; then
+            exec "$player" "$sound"
+        fi
+    done
+fi
+
+# last resort: libcanberra ships its own event sounds
+if command -v canberra-gtk-play >/dev/null 2>&1; then
+    exec canberra-gtk-play -i message
+fi
+
+exit 0

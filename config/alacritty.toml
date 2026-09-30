@@ -26,3 +26,9 @@ blue = "#5dc5f8"
 magenta = "#feabf2"
 cyan = "#24dfc4"
 white = "#ffffff"
+
+# Audible ping on BELL: alacritty makes no sound itself, it runs a command.
+# ,ping picks a player per OS; duration = 0 keeps the visual flash off.
+[bell]
+duration = 0
+command = { program = "/bin/sh", args = ["-c", 'exec "$HOME/.local/bin/,ping"'] }
