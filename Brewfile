@@ -18,6 +18,8 @@ brew "git-delta"
 brew "gh"
 brew "htop"
 brew "gpg"
+brew "pass"
+brew "git-remote-gcrypt"
 
 # python
 brew "uv"
