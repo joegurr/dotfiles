@@ -81,3 +81,5 @@
 		--preview 'git show --color=always {1}' \
 		--preview-window '<50(down)' \
 		--bind 'enter:become(git show {1})' #"
+
+	ce = commit --allow-empty --allow-empty-message -m \"\"
