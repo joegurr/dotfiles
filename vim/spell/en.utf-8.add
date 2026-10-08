@@ -47,6 +47,7 @@ Atlassian
 Audlet's
 AuthenticationResult
 Autoencoders
+B12
 BESS
 BNN
 BNNs
@@ -54,6 +55,7 @@ Baba
 Backprop
 BadGateway
 Bajaj
+Barangaroo
 BatchCheckLayerAvailability
 BatchGetImage
 BatchResources
@@ -62,6 +64,7 @@ BatteryMakerStack
 BatteryMakerSubmission
 BatterySpecification
 Beej's
+Bendigo
 Bernardine
 Bhattacharya
 Blockchain
@@ -73,6 +76,7 @@ Brewfile
 Brideson
 Brothier
 Bulow
+Bulow's
 C's
 CAPEX
 CCM
@@ -99,6 +103,7 @@ CartesianSoftware
 CartesianSoftwareIdentity
 Che
 Chomsky
+Chrissy
 Chrissy's
 Cipriani
 Cipriani's
@@ -180,6 +185,7 @@ ESOO
 EVVPP
 EXCEEDANCE
 EXPR
+Echuca
 Eilish's
 ElastiCache
 Eleonore
@@ -212,6 +218,7 @@ GWH
 García
 Gastro
 Gaussians
+Gayashan's
 Geemi
 Gentine
 Georg
@@ -290,6 +297,7 @@ Jin
 Joshi
 Journalier
 Jr
+K2C
 KPIs
 Kai
 Kai's
@@ -325,6 +333,7 @@ LaTeXTemplates
 Laravel
 LastLineAddress
 LaunchAgents
+Leah's
 Lenovo
 LinearRegressor
 ListBucket
@@ -380,10 +389,12 @@ ModelMetadata
 Mom
 Monomorphisms
 Moreau
+Morgan's
 Morrie
 Mouseless
 Muji
 Mukherjee
+MultiValue
 Murakami
 Murata
 Murramarang
@@ -403,6 +414,7 @@ NUM
 Nadg's
 Nagel
 Narada
+Nat
 Nat's
 Navin
 Navin's
@@ -414,10 +426,12 @@ Newland's
 Nico's
 NoAddress
 Noam
+Noms
 Normalise
 NotImplementedError
 Novemeber
 Numpy
+OAuth
 OIDC
 OLAP
 ONEHUNDREDEIGHTY
@@ -455,10 +469,12 @@ ParameterSpec
 Parry's
 PartialWindow
 Pascoe
+Pentana
 Peppernell
 PeriodAxis
 Petros
 Phaedrus
+Physio
 Pieman
 Pirsig
 Pitron
@@ -579,7 +595,9 @@ Sivers
 SlackAllocation
 Slacklining
 Smirnov
+Soleil
 SparseRows
+Springwood
 StartPortForwardingSessionToRemoteHost
 StartSSHSession
 StartSession
@@ -603,12 +621,14 @@ TAS
 TAS1
 TBC
 TIMESTAMP
+TISM
 TODO
 TODOs
 TORUSDEV
 TOS
 TWOHUNDREDFORTY
 TWh
+Tafe
 Taji
 Takashi
 Tartt
@@ -644,6 +664,7 @@ VPP
 VTOH
 ValueError
 VarName
+Velich
 Velich's
 VeraGrid
 Vonnegut
@@ -668,6 +689,8 @@ Wellbeing
 Whistleblower
 Whistleblowers
 Winmalee
+Wolgan
+Wynyard
 X1
 XINU
 XPOST
@@ -721,6 +744,7 @@ arzela
 ascoli
 asdict
 asg
+ashs
 asof
 astype
 asymp
@@ -886,6 +910,7 @@ dst
 dt
 dtype
 dtypes
+du
 duid
 duids
 dups
@@ -1252,6 +1277,7 @@ oneOf
 openpyxl
 optim
 optimisation
+ord
 org
 organisation
 os
@@ -1496,6 +1522,7 @@ toml
 tqdm
 tr
 traceId
+trigdate
 ttyper
 twinx
 txt
