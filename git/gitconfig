@@ -59,7 +59,7 @@
 	conflictStyle = diff3
 
 [credential]
-	helper = store
+	helper = cache --timeout 3600
 
 [url "git@github.com:"]
 	insteadOf = https://github.com/
@@ -83,3 +83,5 @@
 		--bind 'enter:become(git show {1})' #"
 
 	ce = commit --allow-empty --allow-empty-message -m \"\"
+[include]
+	path = /home/joe/.gitconfig.local

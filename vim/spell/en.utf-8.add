@@ -4,6 +4,7 @@ AEMC
 AEMO
 AEMO's
 AEST
+AMSI
 ANOVA
 APSIM
 ARN
@@ -38,6 +39,7 @@ Apostolos
 Appignanesi
 Arapiles
 Araplies
+Arcteryx
 Arnaud
 Arnaud's
 Arzela
@@ -67,6 +69,7 @@ Beej's
 Bendigo
 Bernardine
 Bhattacharya
+Blochaus
 Blockchain
 Blowering
 Bolkovac
@@ -186,6 +189,7 @@ EVVPP
 EXCEEDANCE
 EXPR
 Echuca
+Eilish
 Eilish's
 ElastiCache
 Eleonore
@@ -231,6 +235,7 @@ GetRepositoryPolicy
 GetResourcePolicy
 GetSecretValue
 Gian
+Girishaa
 GitHub's
 GitHubActions
 GitLab
@@ -288,6 +293,7 @@ InterAction
 Interconnector
 Ishiguro
 Isuru
+Isuru's
 Jabez
 Jamis
 Janek
@@ -315,6 +321,7 @@ Kiureghian
 Klara
 KnockoutJS
 Korina
+Kosciuszko
 Krantz
 Kubernetes
 Kundera
@@ -330,6 +337,7 @@ LOWERREG
 LRMC
 LTS
 LaTeXTemplates
+Larapinta
 Laravel
 LastLineAddress
 LaunchAgents
@@ -512,6 +520,7 @@ QLD
 QLD1
 QUIC
 Qsim
+Qts
 Quadient
 Quadient's
 Quickstart
@@ -668,6 +677,7 @@ VarName
 Velich
 Velich's
 VeraGrid
+Villawood
 Vonnegut
 Vrbik
 Vue
@@ -887,6 +897,7 @@ dict
 didt
 digit
 direnv
+diskutil
 dispatchmodel
 displayKey
 distr
@@ -904,6 +915,7 @@ dotfiles
 dpage
 dplyr
 drdt
+drivekey
 dropboxd
 droplevel
 dsdt
@@ -1036,6 +1048,8 @@ hadamard
 hardcoded
 hasattr
 hashpw
+hdid
+hdiutil
 headroomMw
 healthcheck
 healthreporting
@@ -1251,7 +1265,10 @@ netrw
 newaxis
 newsboat
 nixos
+noMount
+nobrowse
 nodelay
+nomount
 nonlinear
 nonlinearity
 nonstopmode
@@ -1302,6 +1319,7 @@ pep8
 perc
 pgadmin
 pk
+platform
 platformdirs
 plexos
 plist
@@ -1366,6 +1384,7 @@ quicksum
 qyear
 rabbimq
 rabbitmq
+ramdisk
 randn
 rangle
 rb
@@ -1513,6 +1532,7 @@ timedelta
 timeseries
 timestamp
 titlesize
+tmpdir
 tmux
 tmuxp
 toBus
@@ -1581,6 +1601,7 @@ vpc
 vscode
 vtype
 w3
+waitlist
 wandb
 waybar
 wayland
