@@ -731,6 +731,7 @@ amd64
 amqp
 analysing
 anim
+ansi
 ap
 api
 apiInstance
@@ -761,11 +762,15 @@ astype
 asymp
 asyncio
 attr
+attributesfile
 aud
 auth
+autoSetupRemote
 autoencoders
 autojump
 autoscaling
+autosquash
+autostash
 aws
 awscli
 awsebcli
@@ -796,6 +801,7 @@ botocore
 brotli
 brotlicffi
 bruno
+buftype
 busNumber
 bwd
 candidatesWithoutBaseFlow
@@ -808,6 +814,7 @@ cd
 cdk
 cdot
 cdrive
+ce
 cenv
 certificatemanager
 cext
@@ -817,6 +824,7 @@ choicelist
 chore
 chrismanbrown
 ci
+cifjyj
 ckt
 claude
 cleanup
@@ -847,6 +855,7 @@ condlist
 conf
 config
 configs
+conflictStyle
 conftest
 const
 constrname
@@ -883,6 +892,7 @@ dc
 dd
 debuggable
 dedt
+defaultBranch
 defaultdict
 defn
 defs
@@ -895,6 +905,8 @@ deserialisation
 df
 dict
 didt
+diff3
+diffFilter
 digit
 direnv
 diskutil
@@ -966,6 +978,7 @@ errorfactory
 eslint
 español
 etc
+excludesfile
 exclusiveMaximum
 exclusiveMinimum
 exercism
@@ -1019,6 +1032,7 @@ gaussian
 gb
 getattr
 getenv
+gf
 gitatributes
 gitattributes
 gitconfig
@@ -1032,6 +1046,8 @@ glpk
 gnarly
 godaddy
 gp3
+gpg
+gpgsign
 gppd
 gpu
 gray
@@ -1092,6 +1108,7 @@ init
 inline
 inplace
 insgihtful
+insteadOf
 int
 int32
 inten
@@ -1175,6 +1192,7 @@ linux
 listdir
 litera
 loadbalancer
+lobste
 localPortNumber
 lockfile
 lodfThreshold
@@ -1268,6 +1286,7 @@ nixos
 noMount
 nobrowse
 nodelay
+nofile
 nomount
 nonlinear
 nonlinearity
@@ -1292,6 +1311,7 @@ oicd
 oids
 ok
 oneOf
+oneline
 openpyxl
 optim
 optimisation
@@ -1351,6 +1371,7 @@ processinputs
 processoutputs
 productionise
 productionising
+pruneTags
 psql
 psutil
 psycopg
@@ -1391,6 +1412,7 @@ rb
 rc1
 rds
 realised
+rebase
 recieving
 redis
 redshift
@@ -1410,6 +1432,7 @@ repn
 reportArgumentType
 reportAttributeAccessIssue
 repr
+rerere
 resourceTag
 resp
 resync
@@ -1443,6 +1466,7 @@ serverless
 ses
 session
 sessionmaker
+setlocal
 setuptools
 sg
 sharedstack
@@ -1454,6 +1478,7 @@ shinyswatch
 shinywidgets
 showgrid
 showlegend
+signingkey
 silu
 sk
 skipna
@@ -1545,6 +1570,7 @@ tr
 traceId
 trigdate
 ttyper
+tummychow
 twinx
 txt
 typeguard
@@ -1565,6 +1591,7 @@ unserved
 unsqueeze
 unsw
 unthresholded
+updateRefs
 url
 urlgrep
 usecols
@@ -1576,6 +1603,7 @@ utf
 utils
 uuid
 uv
+uvx
 v1
 v1's
 v2

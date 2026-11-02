@@ -83,5 +83,12 @@
 		--bind 'enter:become(git show {1})' #"
 
 	ce = commit --allow-empty --allow-empty-message -m \"\"
+
+	# Review a diff in vim, e.g. `git review`, `git review --cached` or
+	# `git review main...`. Piped, git skips the delta pager and colour, so vim
+	# gets a plain diff. --no-prefix lets gf open a file from its +++ line;
+	# edits land in the working tree, not the index.
+	review = "!f() { git diff --no-prefix \"$@\" | vim -c 'setlocal ft=diff buftype=nofile' -; }; f"
+
 [include]
 	path = /home/joe/.gitconfig.local

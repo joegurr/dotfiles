@@ -20,6 +20,7 @@ brew "htop"
 brew "gpg"
 brew "pass"
 brew "git-remote-gcrypt"
+brew "remind"
 
 # python
 brew "uv"
