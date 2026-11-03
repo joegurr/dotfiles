@@ -21,6 +21,7 @@ brew "gpg"
 brew "pass"
 brew "git-remote-gcrypt"
 brew "remind"
+brew "git-annex"
 
 # python
 brew "uv"
@@ -36,3 +37,4 @@ cask "thunderbird"
 cask "claude-code"
 cask "docker-desktop"
 cask "1password-cli"
+cask "quarto"
