@@ -31,3 +31,8 @@ write_newline_file(VIM_SPELL_FILEPATH, union_words)
 
 if THUNDERBIRD_DICT and os.path.exists(THUNDERBIRD_DICT):
     write_newline_file(THUNDERBIRD_DICT, union_words)
+
+# The code-word list lives next to the prose list and is only sorted, never synced
+tech_filepath = os.path.join(os.path.dirname(VIM_SPELL_FILEPATH), "tech.utf-8.add")
+if os.path.exists(tech_filepath):
+    write_newline_file(tech_filepath, sorted(read_newline_delimited_file(tech_filepath)))

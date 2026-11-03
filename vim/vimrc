@@ -78,9 +78,18 @@ nnoremap <silent> gy <Plug>(coc-type-definition)
 
 set ts=4 sw=4
 
+" Rebuild .spl files when the .add files change outside Vim (git pull, ,s)
+for s:f in glob('~/.vim/spell/*.add', 1, 1)
+  if !filereadable(s:f . '.spl') || getftime(s:f) > getftime(s:f . '.spl')
+    silent execute 'mkspell!' fnameescape(s:f)
+  endif
+endfor
+
 " Turn on spell checking
 set spelllang=en_gb
 set spell
+" zg/1zg adds to the prose list (synced with Thunderbird by ,s), 2zg to the code list
+set spellfile=~/.vim/spell/en.utf-8.add,~/.vim/spell/tech.utf-8.add
 
 " Turn on syntax highlighting.
 syntax on
@@ -189,3 +198,16 @@ if executable("rg")
     set grepprg=rg\ --vimgrep
 endif
 
+augroup NoSpellExtras
+  autocmd!
+  " URLs: scheme://anything-up-to-whitespace
+  autocmd Syntax * syntax match NoSpellUrl  /\v<\a[a-zA-Z0-9+.-]*:\/\/\S+/ contains=@NoSpell containedin=ALL
+  " Git hashes: 7–40 hex chars that include at least one digit
+  autocmd Syntax * syntax match NoSpellHash /\v<(\x{7,40}>)@=\x*\d\x*>/ contains=@NoSpell containedin=ALL
+  " Code identifiers: snake_case, camelCase, PascalCase with humps
+  autocmd Syntax * syntax match NoSpellIdent /\v<\w*(_|\l\u)\w*>/ contains=@NoSpell containedin=ALL
+augroup END
+
+" Optional: give them a look so they don't lose highlighting inside comments etc.
+highlight link NoSpellUrl Underlined
+highlight link NoSpellHash Constant
