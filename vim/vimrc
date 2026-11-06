@@ -11,7 +11,7 @@ Plug 'morhetz/gruvbox'
 
 " Pinned: the last release that works on vim-classic (8.x). Newer coc.nvim is
 " written in vim9script and needs vim >= 9.0.0438. Ships a prebuilt build/index.js.
-Plug 'neoclide/coc.nvim', {'tag': 'v0.0.81'}
+" Plug 'neoclide/coc.nvim' ", {'tag': 'v0.0.81'}
 
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
