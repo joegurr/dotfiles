@@ -8,6 +8,7 @@ brew "jj"
 brew "bash"
 
 # shell/workflow
+brew "gcc"
 brew "direnv"
 brew "fzf"
 brew "autojump"
