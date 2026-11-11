@@ -92,3 +92,6 @@
 
 [include]
 	path = /home/joe/.gitconfig.local
+
+[gcrypt]
+	gpg-args = --quiet --logger-file /dev/null

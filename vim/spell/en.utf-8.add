@@ -332,6 +332,7 @@ Kundera
 LGAS
 LICENSEID
 LLM
+LLMs
 LMRC
 LODF
 LOWER5MIN
@@ -1033,6 +1034,7 @@ gitattributes
 gitconfig
 githooks
 github
+githubcopilot
 githubusercontent
 gitignore
 gitlab
@@ -1301,6 +1303,7 @@ oicd
 oids
 ok
 oneOf
+openai
 openpyxl
 optim
 optimisation
