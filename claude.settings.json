@@ -1,0 +1,94 @@
+{
+  "attribution": {
+    "commit": "",
+    "pr": ""
+  },
+  "permissions": {
+    "allow": [
+      "Bash(source .venv/bin/activate)"
+    ],
+    "deny": [
+      "Bash(git push --force)",
+      "Bash(git push --force:*)",
+      "Bash(git push -f)",
+      "Bash(git push -f:*)",
+      "Bash(git push --force-with-lease)",
+      "Bash(git push --force-with-lease:*)",
+      "Bash(git push --force-if-includes)",
+      "Bash(git push --force-if-includes:*)",
+      "Bash(gpg *)",
+      "Bash(gpg2 *)",
+      "Bash(gpgconf *)",
+      "Bash(gpg-agent *)",
+      "Bash(gpg-connect-agent *)",
+      "Bash(pass *)",
+      "Read(~/.gnupg/**)",
+      "Edit(~/.gnupg/**)"
+    ],
+    "ask": [
+      "Bash(git commit:*)",
+      "Bash(git push)",
+      "Bash(git push:*)"
+    ],
+    "defaultMode": "default"
+  },
+  "model": "opus",
+  "hooks": {
+    "Notification": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "tty=$(tmux display -p -t \"$TMUX_PANE\" \"#{pane_tty}\" 2>/dev/null) && printf \"\\a\" > \"$tty\"; true"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "tty=$(tmux display -p -t \"$TMUX_PANE\" \"#{pane_tty}\" 2>/dev/null) && printf \"\\a\" > \"$tty\"; true"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$HOME\"/.claude/hooks/ask-before-push.sh",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  },
+  "enabledPlugins": {
+    "pyright-lsp@claude-plugins-official": true
+  },
+  "outputStyle": "Concise",
+  "sandbox": {
+    "enabled": false,
+    "allowUnsandboxedCommands": false
+  },
+  "skipWorkflowUsageWarning": true,
+  "theme": "light",
+  "preferredNotifChannel": "auto",
+  "switchModelsOnFlag": false,
+  "autoMode": {
+    "allow": [
+      "$defaults",
+      "Bash(op read:*)"
+    ]
+  },
+  "tui": "fullscreen",
+  "env": {
+    "BASH_DEFAULT_TIMEOUT_MS": "1800000",
+    "BASH_MAX_TIMEOUT_MS": "7200000"
+  },
+  "fileCheckpointingEnabled": true
+}
