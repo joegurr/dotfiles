@@ -3,7 +3,7 @@
 # core
 brew "git"
 brew "tmux"
-brew "vim-classic"
+brew "vim"
 brew "jj"
 brew "bash"
 
