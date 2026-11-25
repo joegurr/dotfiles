@@ -60,7 +60,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "\"$HOME\"/.claude/hooks/ask-before-push.sh",
+            "command": "f=\"$HOME/.claude/hooks/ask-before-push.sh\"; [ -x \"$f\" ] && exec \"$f\"; exit 0",
             "timeout": 10
           }
         ]
